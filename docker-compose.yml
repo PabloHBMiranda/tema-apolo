@@ -6,7 +6,7 @@ services:
     image: 'mysql:${MYSQL_VERSION}'
     volumes:
       - db_data:/var/lib/mariadb
-    restart: always
+    restart: "no"
     environment:
       MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
       MYSQL_DATABASE: '${DB_DATABASE}'
