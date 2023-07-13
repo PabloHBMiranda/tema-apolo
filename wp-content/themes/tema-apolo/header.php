@@ -11,6 +11,5 @@
 </head>
 <body <?php body_class() ?>>
 <header>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores assumenda dicta ducimus expedita facere fuga
-    fugit hic iure minus molestias nostrum numquam optio quo, sapiente sunt ullam. Ea, nam.
+    LXDADAWSDAWDWADAW
 </header>
