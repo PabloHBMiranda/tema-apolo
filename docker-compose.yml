@@ -6,6 +6,7 @@ services:
     image: 'mysql:${MYSQL_VERSION}'
     volumes:
       - db_data:/var/lib/mariadb
+      - ./tema_apolo.sql:/docker-entrypoint-initdb.d/tema_apolo.sql
     restart: "no"
     environment:
       MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
