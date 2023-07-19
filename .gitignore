@@ -1,2 +1,3 @@
-node_modules
 .idea
+/public/wp-content/themes/tema-apolo/node_modules
+/public/wp-content/themes/tema-apolo/bundle
