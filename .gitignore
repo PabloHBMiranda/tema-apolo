@@ -1,3 +1,10 @@
+
+## Public
+/public/*
+!/public/wp-content
+
+
+## Tema
 /public/wp-content/themes/tema-apolo/node_modules
 /public/wp-content/themes/tema-apolo/bundle
 /public/wp-content/themes/tema-apolo/yarn-lock
