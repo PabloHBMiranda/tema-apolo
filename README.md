@@ -29,5 +29,15 @@ No arquivo .env fica informações da execução do projeto.
 
 Caso não tenha o Wordpress instalado o comando "docker-compose up" vai efetuar a instalação automaticamente.
 
+#### Usuário Padrão
+```
+dev
+```
+
+#### Senha Padrão
+```
+123
+```
+
 
 
