@@ -5,7 +5,7 @@ Para habilitar e executar o container do Wordpress, execute o comando abaixo:
 ```
 docker-compose up
 ```
-O comandoo "yarn install" vai instalar os pacotes do NPM/YARN.
+O comando "yarn install" vai instalar os pacotes do NPM/YARN.
 Entre na pasta do tema pelo terminal e excute a instalação.
 
 #### Directory
