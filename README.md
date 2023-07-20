@@ -22,7 +22,6 @@ Infos Gerais:
 
 No arquivo .env fica informações da execução do projeto. 
 
-
 Caso não tenha o Wordpress instalado o comando "docker-compose up" vai efetuar a instalação automaticamente.
 
 
