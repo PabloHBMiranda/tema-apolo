@@ -1,14 +1,32 @@
-Para instalar e rodar as depêndencias estabelecidas no docker-compose.yml, isso vai instalar e e habilitar o container padrão do Wordpress.
+Para rodar o projeto:
+
+Para habilitar e executar o container do Wordpress, execute o comando abaixo:
 #### Run docker
 ```
 docker-compose up
-```
-
-Caso não tenha o Wordpress instalado no diretório /tema-apolo/public o comando vai efetuar a instalação.
-
-#### Run yarn in theme directory
 
 ```
+O comando abaixo vai instalar o pacotes do NPm/YARN.
+Pelo TERMINAL do seu sistema operacional, entre na pasta tema-apolo e execute o comando abaixo:
+#### Install yarn in theme directory
+```
+LINUX: cd public/wp-content/themes/tema-apolo
 yarn install
-yarn run watch
+
 ```
+Para iniciar o NPM/YARN execute o comando a baixo, após a instalação.
+O comando deve ser executado no mesmo diretório que foi feita a instalação dos pacotes do NPM/YARN.
+#### Run yarn in theme directory
+```
+yarn run watch
+
+```
+
+
+Infos Gerais:
+
+No arquivo .env fica informações da execução do projeto.
+Caso não tenha o Wordpress instalado o comando "docker-compose up" vai efetuar a instalação automaticamente.
+
+
+
