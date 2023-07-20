@@ -3,6 +3,13 @@
 /public/*
 !/public/wp-content
 
+## Wp-Content
+/public/wp-content/uploads
+/public/wp-content/index.php
+
+## Themes
+/public/wp-content/themes/*
+!/public/wp-content/themes/tema-apolo
 
 ## Tema
 /public/wp-content/themes/tema-apolo/node_modules

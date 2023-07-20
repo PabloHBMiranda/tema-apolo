@@ -9,10 +9,10 @@ services:
       - ./tema_apolo.sql:/docker-entrypoint-initdb.d/tema_apolo.sql
     restart: "no"
     environment:
-      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
-      MYSQL_DATABASE: '${DB_DATABASE}'
-      MYSQL_USER: '${DB_USER}'
-      MYSQL_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_ROOT_PASSWORD: '${WORDPRESS_DB_PASSWORD}'
+      MYSQL_DATABASE: '${WORDPRESS_DB_NAME}'
+      MYSQL_USER: '${WORDPRESS_DB_USER}'
+      MYSQL_PASSWORD: '${WORDPRESS_DB_PASSWORD}'
     networks:
       - wpsite
   # phpmyadmin
@@ -22,7 +22,7 @@ services:
     image: phpmyadmin/phpmyadmin
     restart: "no"
     ports:
-      - '${DB_PORT}:80'
+      - '${WORDPRESS_DB_PORT}:80'
     environment:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD: password
@@ -39,9 +39,9 @@ services:
     volumes: [ './public:/var/www/html' ]
     environment:
       WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: '${DB_USER}'
-      WORDPRESS_DB_PASSWORD: '${DB_PASSWORD}'
-      WORDPRESS_DB_NAME: '${DB_DATABASE}'
+      WORDPRESS_DB_USER: '${WORDPRESS_DB_USER}'
+      WORDPRESS_DB_PASSWORD: '${WORDPRESS_DB_PASSWORD}'
+      WORDPRESS_DB_NAME: '${WORDPRESS_DB_NAME}'
     networks:
       - wpsite
 networks:
