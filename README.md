@@ -5,8 +5,8 @@ Para habilitar e executar o container do Wordpress, execute o comando abaixo:
 ```
 docker-compose up
 ```
-O comando abaixo vai instalar o pacotes do NPm/YARN.
-Pelo TERMINAL do seu sistema operacional, entre na pasta tema-apolo e execute os comandos abaixo:
+O comandoo "yarn install" vai instalar o pacotes do NPm/YARN.
+Entre na pasta do tema pelo terminal e excute a instalação.
 
 #### Directory
 ```
