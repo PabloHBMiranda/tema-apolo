@@ -36,11 +36,11 @@ html {
 
 body {
   position: relative;
-  font-family: 'Roboto';
+  font-family: var(--fonte-family);
   overflow: auto;
   display: flex;
   flex-direction: column;
-  background-color: var(--cor-back);
+  background-color: var(--primaria);
   font-size: var(--fs-8);
 
   @media only screen and (min-width: 999px) {
