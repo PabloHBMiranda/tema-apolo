@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+::before, ::after {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+html :where(img) {
+  max-width: none;
+  height: initial;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  // Usar em % melhorar responsividade
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: relative;
+  font-family: var(--font-family-primaria);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+
+  &.page-template-page-empty:not(.alto_contraste) {
+    background-color: var(--branco) !important;
+  }
+
+  &.hidden {
+    overflow: hidden;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+
+    > .section-kind-transparent:first-child {
+      margin-top: 20px;
+    }
+  }
+
+  &.page-full-screen {
+    main {
+      flex: 1;
+      overflow: auto;
+    }
+
+    footer {
+      display: none;
+    }
+  }
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+  border: none;
+}
+
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: none;
+}
+
+input,
+textarea {
+  font-family: var(--font-family-primaria);
+}
+
+input:focus {
+  outline: none;
+}
+
+article {
+  ul li {
+    list-style: initial;
+    margin-left: 20px;
+  }
+
+  ol li {
+    list-style: decimal;
+    margin-left: 20px;
+  }
+
+  > ol, > ul {
+    margin-bottom: 14px;
+    margin-left: 20px;
+  }
+
+  p {
+    margin-bottom: 14px;
+  }
+}
+
+// Corrige no web-stories
+.web-stories-list__lightbox {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+body.alto_contraste {
+  background-color: #000 !important;
+  background-image: none !important;
+
+  a {
+    color: yellow !important;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    border: 1px solid yellow;
+    background: #000 !important;
+    color: yellow !important;
+
+    span, p {
+      color: yellow !important;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    svg path {
+      fill: yellow !important;
+    }
+  }
+}
