@@ -36,11 +36,16 @@ html {
 
 body {
   position: relative;
-  font-family: var(--font-family-primaria);
+  font-family: 'Roboto';
   overflow: auto;
   display: flex;
   flex-direction: column;
-  background-color: var(--background-color);
+  background-color: var(--cor-back);
+  font-size: var(--fs-8);
+
+  @media only screen and (min-width: 999px) {
+    font-size: 20px;
+  }
 
   &.page-template-page-empty:not(.alto_contraste) {
     background-color: var(--branco) !important;
