@@ -43,13 +43,6 @@ body {
   background-color: var(--primaria);
   font-size: var(--fs-8);
 
-  @media only screen and (min-width: 999px) {
-    font-size: 20px;
-  }
-
-  &.page-template-page-empty:not(.alto_contraste) {
-    background-color: var(--branco) !important;
-  }
 
   &.hidden {
     overflow: hidden;
