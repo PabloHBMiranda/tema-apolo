@@ -36,12 +36,12 @@ html {
 
 body {
   position: relative;
-  font-family: var(--fonte-family);
+  font-family: $fonte_family;
   overflow: auto;
   display: flex;
   flex-direction: column;
   background-color: var(--primaria);
-  font-size: var(--fs-8);
+  font-size: $fs_20px;
 
 
   &.hidden {
