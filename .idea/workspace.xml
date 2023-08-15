@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22890cf6-c4a3-4707-b5f6-5904bf72dc5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/abstract/responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/js/home-script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/abstract/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/abstract/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/base/standards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/base/standards.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/js/teste_home/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/scripts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,26 +42,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pablo/projetos-pessoais/tema-apolo/public/wp-content/themes/tema-apolo/assets/js&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/js/teste_home/teste" />
     </key>
@@ -76,7 +81,10 @@
       <workItem from="1689812526591" duration="1964000" />
       <workItem from="1689990300351" duration="3036000" />
       <workItem from="1690029780812" duration="6737000" />
-      <workItem from="1690240236934" duration="1667000" />
+      <workItem from="1690240236934" duration="2001000" />
+      <workItem from="1692057207392" duration="2112000" />
+      <workItem from="1692059736975" duration="138000" />
+      <workItem from="1692136747668" duration="1097000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-import home from './js/teste_home';
+import homeScript from "./js/home-script";
 
 ((fn) => {
     if (document.attachEvent ? document.readyState === 'complete' : document.readyState !== 'loading') {
@@ -7,5 +7,6 @@ import home from './js/teste_home';
         document.addEventListener('DOMContentLoaded', fn);
     }
 })(() => {
-    home();
+    homeScript();
 });
+
