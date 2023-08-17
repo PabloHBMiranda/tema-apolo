@@ -1,9 +1,7 @@
 <?php
 add_action( 'wp_enqueue_scripts', function () {
     $theme_version = get_bloginfo( "version" );
-
-    echo get_template_directory_uri() . '/bundle/index.css';
-
+    
     wp_enqueue_style(
         get_stylesheet() . "-styles",
         get_template_directory_uri() . '/bundle/index.css',
