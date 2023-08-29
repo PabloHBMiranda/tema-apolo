@@ -5,45 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22890cf6-c4a3-4707-b5f6-5904bf72dc5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme/menus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/header/header-main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme/sidebars.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/src/Create_New_Section.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/_inc/akismet-frontend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/_inc/akismet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/_inc/akismet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/_inc/img/logo-a-2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/_inc/img/logo-full-2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/akismet.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/changelog.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/class.akismet-admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/class.akismet-cli.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/class.akismet-rest-api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/class.akismet-widget.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/class.akismet.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/views/activate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/views/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/views/connect-jp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/views/enter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/views/get.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/views/notice.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/views/predefined.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/views/setup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/views/start.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/views/stats.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/views/title.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/akismet/wrapper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/plugins/hello.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/js/home-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/js/front_page/home-script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/hocks.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme/hocks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme/scripts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +64,7 @@
       <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc" />
       <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme" />
       <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/js/front_page" />
       <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/js/teste_home/teste" />
@@ -119,7 +86,9 @@
       <workItem from="1692059736975" duration="138000" />
       <workItem from="1692136747668" duration="1368000" />
       <workItem from="1692138345848" duration="83000" />
-      <workItem from="1692306497834" duration="1857000" />
+      <workItem from="1692306497834" duration="4548000" />
+      <workItem from="1692313220754" duration="519000" />
+      <workItem from="1693322564675" duration="2715000" />
     </task>
     <servers />
   </component>
