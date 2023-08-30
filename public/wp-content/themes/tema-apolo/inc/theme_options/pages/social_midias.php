@@ -11,7 +11,7 @@ function social_menu_page()
         'manage_options',
         'apl_social_midias',
         'socials_page',
-        'dashicons-admin-generic',
+        'dashicons-smartphone',
         40,
     );
 }

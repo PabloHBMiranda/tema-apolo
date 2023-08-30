@@ -3,12 +3,12 @@
 add_action('admin_menu', 'informations_options');
 function informations_options(){
     add_menu_page(
-        'Informações Gerais',
-        'Informações Gerais',
+        'Informações',
+        'Informações',
         'manage_options',
         'apl_general_information',
         'infos_page',
-        'dashicons-admin-generic',
+        'dashicons-info',
         30,
     );
 }
@@ -55,4 +55,3 @@ function infos_page() {
 
     wp_enqueue_style('custom-admin-styles', get_template_directory_uri() . '/assets/css/admin/admin-styles.scss');
 }
-

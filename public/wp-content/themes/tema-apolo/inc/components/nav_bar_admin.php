@@ -5,7 +5,11 @@ $page = $args['page'] ?? '';
 if(!empty($page)) {
     $options =[
         [
-            'name' => 'Informações Gerais',
+            'name' => 'Preferências',
+            'page_name' => 'apl_preferences'
+        ],
+        [
+            'name' => 'Informações',
             'page_name' => 'apl_general_information'
         ],
         [
