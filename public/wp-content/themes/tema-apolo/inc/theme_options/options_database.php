@@ -1,6 +1,15 @@
 <?php
 
 function initialize_theme_options() {
+    //Preferências
+    if (false === get_option('apl_admin_pf_header_bar')) {
+        add_option('apl_admin_pf_header_bar', '');
+    }
+    if (false === get_option('apl_admin_pf_header_main')) {
+        add_option('apl_admin_pf_header_main', '');
+    }
+
+    //Informações Gerais
     if (false === get_option('apl_admin_gn_endereco')) {
         add_option('apl_admin_gn_endereco', '');
     }
