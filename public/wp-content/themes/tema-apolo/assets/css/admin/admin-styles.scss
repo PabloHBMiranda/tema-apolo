@@ -1,0 +1,29 @@
+.page-admin-theme{
+      margin-top: 50px;
+}
+
+.form-infos{
+display: flex;
+gap: 10px;
+flex-direction: column;
+}
+
+.wrapper-form{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
+
+.wrapper-form .text-form{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    width: 200px;
+    padding: 10px 10px 10px 0;
+}
+
+.wrapper-form input{
+    height: 40px;
+    width: 400px;
+}

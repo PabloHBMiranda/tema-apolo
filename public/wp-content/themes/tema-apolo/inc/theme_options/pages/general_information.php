@@ -15,6 +15,14 @@ function informations_options(){
 
 function infos_page() {
 
+    $options_names = [
+        'apl_admin_gn_endereco',
+        'apl_admin_gn_telefone_1',
+        'apl_admin_gn_telefone_2',
+        'apl_admin_gn_email_1',
+        'apl_admin_gn_email_2',
+    ];
+
     $slug_admin_page = 'apl_general_information';
 
 
@@ -23,51 +31,28 @@ function infos_page() {
     get_template_part('inc/components/nav_bar_admin', null, ['page' => $slug_admin_page]);
     echo '<div class="wrapper-general-information">';
     echo '<h3>Informações Gerais</h3>';
-        echo '<div class="infors-wrapper">';
-            echo '<div class="description-text-form">';
-                echo '<p>Texto de Descrição</p>';
-            echo '</div>';
+        echo '<div class="infos-wrapper">';
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        update_option('apl_facebook', sanitize_text_field($_POST['facebook']));
-        update_option('apl_instagram', sanitize_text_field($_POST['instagram']));
+        foreach ($options_names as $option_name) {
+            update_option($option_name, sanitize_text_field($_POST[$option_name]));
+        }
 
         echo '<div class="updated"><p>Opções atualizadas com sucesso.</p></div>';
     }
             echo '<form class="form-infos" method="post">';
-                echo '<input type="text" id="field_1" name="facebook" placeholder="Facebook" value="' . esc_attr(get_option('apl_facebook')) . '" />';
-                    echo '<div class="wrapper-form"><p class="text-form">Facebook</p><input type="text" id="field_2" name="instagram" placeholder="Instagram" value="' . esc_attr(get_option('apl_instagram')) . '" /></div>';
+                    foreach ($options_names as $name){
+                        $old_name = $name;
+                        $name = str_replace('apl_admin_gn_', '', $name);
+                        $name = str_replace('_', ' ', $name);
+                        $name = ucwords($name);
+                        echo '<div class="wrapper-form"><p class="text-form">' . $name . '</p><input type="text" id="'. $old_name . '" name="' . $old_name . '" placeholder="' . $name . '" value="' . esc_attr(get_option($old_name)) . '" /></div>';
+                    }
                     submit_button('Salvar Configurações');
                 echo '</form>';
             echo '</div>';
         echo '</div>';
     echo '</div>';
 
-    echo '<style>
-
-       .form-infos{
-       display: flex;
-       gap: 10px;
-       flex-direction: column;
-       }
-
-      .wrapper-form{
-          display: flex;
-          flex-direction: row;
-          gap: 40px;
-          align-items: center;
-      }
-      
-        .wrapper-form .text-form{
-            font-size: 18px;
-            font-weight: 600;
-            margin: 0;
-            width: 200px;
-            padding: 10px 10px 10px 0;
-        }
-        
-        .wrapper-form input{
-            height: 40px;
-        }
-    </style>';
+    wp_enqueue_style('custom-admin-styles', get_template_directory_uri() . '/assets/css/admin/admin-styles.scss');
 }
 
