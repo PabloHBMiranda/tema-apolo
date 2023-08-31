@@ -11,5 +11,5 @@
 </head>
 <body <?php body_class() ?>>
 <header>
-
+    <?php include 'inc/sections/header/header-bar.php'?>
 </header>

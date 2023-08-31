@@ -34,11 +34,30 @@ function socials_page()
     echo '<h3>Redes Sociais</h3>';
         echo '<div class="infos-wrapper">';
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            foreach ($options_names as $option_name) {
-                update_option($option_name, sanitize_text_field($_POST[$option_name]));
+            $validate = true;
+            $campos = [];
+
+            foreach ($options_names as $option_name){
+                if($option_name != 'apl_admin_sc_whatsapp'){
+                    if(!filter_var($_POST[$option_name], FILTER_VALIDATE_URL) && !empty($_POST[$option_name])){
+                        $validate = false;
+                        $campos[] = $option_name;
+                    }
+                }
             }
 
-            echo '<div class="updated"><p>Opções atualizadas com sucesso.</p></div>';
+            if($validate){
+                foreach ($options_names as $option_name) {
+                    update_option($option_name, sanitize_text_field($_POST[$option_name]));
+                }
+                echo '<div class="updated"><p>Opções atualizadas com sucesso.</p></div>';
+            } else{
+                foreach ($campos as $campo){
+                    $campo = str_replace('apl_admin_sc_', '', $campo);
+                    $campo = ucwords($campo);
+                    echo '<div class="error"><p>Verifique o campo: ' . $campo. '</p></div>';
+                }
+            }
         }
         echo '<form class="form-infos" method="post">';
             foreach ($options_names as $name){
