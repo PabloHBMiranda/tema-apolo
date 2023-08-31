@@ -16,11 +16,8 @@ function preference_options(){
 function preference_page() {
 
     $options_names = [
-        'apl_admin_gn_endereco',
-        'apl_admin_gn_telefone_1',
-        'apl_admin_gn_telefone_2',
-        'apl_admin_gn_email_1',
-        'apl_admin_gn_email_2',
+        'apl_admin_pf_header_bar',
+        'apl_admin_pf_header_main',
     ];
 
     $slug_admin_page = 'apl_preferences';
@@ -30,22 +27,23 @@ function preference_page() {
     echo '<div class="' . $class_name . '">';
     get_template_part('inc/components/nav_bar_admin', null, ['page' => $slug_admin_page]);
     echo '<div class="wrapper-general-information">';
-    echo '<h3>Informações Gerais</h3>';
+    echo '<h3>Peronalização</h3>';
     echo '<div class="infos-wrapper">';
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         foreach ($options_names as $option_name) {
-            update_option($option_name, sanitize_text_field($_POST[$option_name]));
+            $option_value = isset($_POST[$option_name]) ? '1' : '0';
+            update_option($option_name, $option_value);
         }
-
         echo '<div class="updated"><p>Opções atualizadas com sucesso.</p></div>';
     }
     echo '<form class="form-infos" method="post">';
     foreach ($options_names as $name){
+        $checked = get_option($name) === '1' ? 'checked' : '';
         $old_name = $name;
-        $name = str_replace('apl_admin_gn_', '', $name);
+        $name = str_replace('apl_admin_pf_', '', $name);
         $name = str_replace('_', ' ', $name);
         $name = ucwords($name);
-        echo '<div class="wrapper-form"><p class="text-form">' . $name . '</p><input type="text" id="'. $old_name . '" name="' . $old_name . '" placeholder="' . $name . '" value="' . esc_attr(get_option($old_name)) . '" /></div>';
+        echo '<div class="wrapper-checkbox"><p class="text-form">' . $name . '</p><input class="check-admin" type="checkbox" id="'. $old_name . '" name="' . $old_name . '" value="1" ' . $checked . ' /></div>';
     }
     submit_button('Salvar Configurações');
     echo '</form>';

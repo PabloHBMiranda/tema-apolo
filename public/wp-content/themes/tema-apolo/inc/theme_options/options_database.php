@@ -3,10 +3,10 @@
 function initialize_theme_options() {
     //Preferências
     if (false === get_option('apl_admin_pf_header_bar')) {
-        add_option('apl_admin_pf_header_bar', '');
+        add_option('apl_admin_pf_header_bar', false);
     }
     if (false === get_option('apl_admin_pf_header_main')) {
-        add_option('apl_admin_pf_header_main', '');
+        add_option('apl_admin_pf_header_main', false);
     }
 
     //Informações Gerais
