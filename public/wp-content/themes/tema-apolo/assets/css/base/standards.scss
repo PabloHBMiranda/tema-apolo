@@ -40,7 +40,8 @@ body {
   overflow: auto;
   display: flex;
   flex-direction: column;
-  font-size: $fs_20px;
+  font-size: $fs_16px;
+  background: var(----background-color);
 
 
   &.hidden {
@@ -76,6 +77,13 @@ body {
       display: none;
     }
   }
+}
+
+.container{
+  display: flex;
+  margin: 0 auto;
+  max-width: 1195px;
+  width: 100%;
 }
 
 button::-moz-focus-inner,

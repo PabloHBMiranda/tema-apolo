@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22890cf6-c4a3-4707-b5f6-5904bf72dc5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/header/header-bar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme_options/pages/social_midias.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme_options/pages/social_midias.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/abstract/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/abstract/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/base/standards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/base/standards.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,7 @@
       <workItem from="1693393856170" duration="13962000" />
       <workItem from="1693432401680" duration="6525000" />
       <workItem from="1693444028462" duration="3002000" />
-      <workItem from="1693519185044" duration="2371000" />
+      <workItem from="1693519185044" duration="3282000" />
     </task>
     <servers />
   </component>
