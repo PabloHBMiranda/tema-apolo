@@ -40,6 +40,7 @@ $class_list = implode('-', $class_name);
 
 <section class="<?= $class_list ?>">
     <div class="container">
+
         <?php if (!empty($social_midias)) { ?>
             <div class="template-part-social-media">
                 <div class="wrapper-social-icons">
