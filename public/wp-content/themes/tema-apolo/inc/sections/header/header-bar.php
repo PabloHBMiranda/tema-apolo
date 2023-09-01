@@ -40,14 +40,13 @@ $class_list = implode('-', $class_name);
 
 <section class="<?= $class_list ?>">
     <div class="container">
-
         <?php if (!empty($social_midias)) { ?>
             <div class="template-part-social-media">
                 <div class="wrapper-social-icons">
                     <?php foreach ($social_midias as $social) { ?>
                         <div class="content-social-media">
                             <a href="<?= $social['url'] ?>" target="_blank" class="item-social-media">
-                                <?= $social['icon'] ?>
+                                <img src="../../assets/images/imagem.png" alt="">
                                 <p class="text-social-media"> <?= $social['name'] ?></p>
                             </a>
                         </div>
