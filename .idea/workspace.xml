@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22890cf6-c4a3-4707-b5f6-5904bf72dc5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/constants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/instagram.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/whatsapp.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/facebook.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/facebook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/whatsapp.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/header/header-bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/header/header-bar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/header/header-main.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/header/header-main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,7 @@
       <workItem from="1693519185044" duration="7208000" />
       <workItem from="1693582902408" duration="3995000" />
       <workItem from="1693596204041" duration="230000" />
-      <workItem from="1693661026172" duration="4273000" />
+      <workItem from="1693661026172" duration="4898000" />
     </task>
     <servers />
   </component>
