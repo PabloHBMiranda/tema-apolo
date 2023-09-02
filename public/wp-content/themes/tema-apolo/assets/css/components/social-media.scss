@@ -1,0 +1,42 @@
+.template-part-social-media{
+    display: flex;
+    .wrapper-social-icons{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        .content-social-media{
+            .item-social-media{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                .icon-social-media{
+                    display: flex;
+
+                    svg{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                .text-social-media{
+                    align-items: center;
+                    display: flex;
+                    font-size: $fs_12px;
+                    font-weight: 700;
+                    letter-spacing: .02em;
+                    line-height: 110%;
+                    text-transform: uppercase;
+                    transition: .2s;
+                    color: var(--fonte-escura);
+                }
+
+                &:hover{
+                    .text-social-media{
+                        color: var(--cor-primaria);
+                    }
+                }
+            }
+        }
+    }
+}
