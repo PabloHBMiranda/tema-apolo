@@ -41,7 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: $fs_16px;
-  background: var(----background-color);
+  background: var(--background-color);
 
 
   &.hidden {
