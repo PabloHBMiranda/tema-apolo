@@ -14,8 +14,26 @@
                     display: flex;
 
                     svg{
-                        width: 20px;
-                        height: 20px;
+                        width: 16px;
+                        height: 16px;
+
+                        g{
+                            g{
+                                path{
+                                    fill: var(--secundaria);
+                                }
+
+                                g{
+                                    .path-1{
+                                        fill: var(--secundaria) !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .cls-1{
+                            fill: var(--secundaria) !important;
+                        }
                     }
                 }
 
@@ -33,7 +51,7 @@
 
                 &:hover{
                     .text-social-media{
-                        color: var(--cor-primaria);
+                        color: var(--secundaria);
                     }
                 }
             }
