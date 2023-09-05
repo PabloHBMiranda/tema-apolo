@@ -26,7 +26,7 @@ if (get_option('apl_admin_sc_whatsapp')) {
 ?>
 
 <?php if (!empty($social_midias)) { ?>
-    <div class="template-part-social-media">
+    <div class="template-component-social-media">
         <div class="wrapper-social-icons">
             <?php foreach ($social_midias as $social) { ?>
                 <div class="content-social-media">
