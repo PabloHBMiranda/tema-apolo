@@ -13,5 +13,15 @@ function add_nav_menus_link() {
         29
     );
 
+    add_menu_page(
+        'Personalizar',
+        'Personalizar',
+        'manage_options',
+        'customize.php',
+        '',
+        'dashicons-art',
+        29
+    );
+
 }
 
