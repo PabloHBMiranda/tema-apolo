@@ -9,17 +9,17 @@ function customizer_color_section($wp_customize) {
 
     // Adicione um controle para selecionar uma cor - PRIMARIAS
     $wp_customize->add_setting('primaria', array(
-        'default' => '#ff0000',
+        'default' => '#333333',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
     $wp_customize->add_setting('primaria-light', array(
-        'default' => '#cacaca',
+        'default' => '#666666',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
     $wp_customize->add_setting('primaria-escura', array(
-        'default' => '#000',
+        'default' => '#1a1a1a',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
@@ -46,17 +46,17 @@ function customizer_color_section($wp_customize) {
 
     //Adiciona um controle para selecionar uma cor - SECUNDARIAS
     $wp_customize->add_setting('secundaria', array(
-        'default' => '#ff0000',
+        'default' => '#FF5733',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
     $wp_customize->add_setting('secundaria-light', array(
-        'default' => '#cacaca',
+        'default' => '#FF8C66',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
     $wp_customize->add_setting('secundaria-escura', array(
-        'default' => '#000',
+        'default' => '#B23C0B',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
@@ -81,19 +81,19 @@ function customizer_color_section($wp_customize) {
 
     //xxx
 
-    //Adiciona um controle para selecionar uma cor - SECUNDARIAS
+    //Adiciona um controle para selecionar uma cor - OPTIONS
     $wp_customize->add_setting('fonte-escura', array(
-        'default' => '#ff0000',
+        'default' => '#535353',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
     $wp_customize->add_setting('fonte-clara', array(
-        'default' => '#cacaca',
+        'default' => '#808E9C',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
-    $wp_customize->add_setting('background', array(
-        'default' => '#000',
+    $wp_customize->add_setting('background-color', array(
+        'default' => '#F4F4F5',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
@@ -110,10 +110,10 @@ function customizer_color_section($wp_customize) {
         'settings' => 'fonte-clara',
     )));
 
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'background', array(
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'background-color', array(
         'label' => __('Background', 'tema-apolo'),
         'section' => 'custom_colors',
-        'settings' => 'background',
+        'settings' => 'background-color',
     )));
 }
 add_action('customize_register', 'customizer_color_section');
