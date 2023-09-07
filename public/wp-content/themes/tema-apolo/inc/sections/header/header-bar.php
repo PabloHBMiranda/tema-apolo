@@ -1,7 +1,7 @@
 <?php
 
 $class_name = 'template-section';
-$id = 'header-main';
+$id = 'header-bar';
 
 $class_name = [
     $class_name,
@@ -14,7 +14,7 @@ $class_list = implode('-', $class_name);
 
 <section class="<?= $class_list ?>">
     <div class="container">
-        <div class="wrapper-header-main">
+        <div class="wrapper-header-bar">
             <?php
             if ( function_exists( 'the_custom_logo' ) ) {
                 the_custom_logo();

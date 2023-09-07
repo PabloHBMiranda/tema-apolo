@@ -1,5 +1,5 @@
 // Fontes
-$fonte_family: 'Montserrat';
+$fonte_family: 'Montserrat', sans-serif;
 $font_sans_serif: sans-serif;
 $font_arial: Arial;
 
@@ -48,6 +48,6 @@ $fs_64px: #{64px / $fs_base}rem;
   --secundaria-light: #FF8C66;
   --secundaria-escuro: #B23C0B;
   --fonte-clara: #808E9C;
-  --fonte-escura: #56697B;
+  --fonte-escura: #535353;
   --background-color: #F4F4F5;
 }
