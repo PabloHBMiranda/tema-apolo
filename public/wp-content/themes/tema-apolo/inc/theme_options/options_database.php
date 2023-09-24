@@ -29,6 +29,10 @@ function initialize_theme_options() {
         add_option('apl_admin_gn_gn_cnpj', '');
     }
 
+    if (false === get_option('apl_admin_gn_endereco')) {
+        add_option('apl_admin_gn_gn_endereco', '');
+    }
+
 
     //Redes Sociais
     if (false === get_option('apl_admin_sc_facebook')) {

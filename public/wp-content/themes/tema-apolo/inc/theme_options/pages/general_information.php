@@ -22,6 +22,7 @@ function infos_page() {
         'apl_admin_gn_email_1',
         'apl_admin_gn_email_2',
         'apl_admin_gn_cnpj',
+        'apl_admin_gn_endereco',
     ];
 
     $slug_admin_page = 'apl_general_information';
@@ -46,6 +47,10 @@ function infos_page() {
                         $name = str_replace('apl_admin_gn_', '', $name);
                         $name = str_replace('_', ' ', $name);
                         $name = ucwords($name);
+
+                        if($name === 'Endereco'){
+                            $name = 'Endereço';
+                        }
                         echo '<div class="wrapper-form"><p class="text-form">' . $name . '</p><input type="text" id="'. $old_name . '" name="' . $old_name . '" placeholder="' . $name . '" value="' . esc_attr(get_option($old_name)) . '" /></div>';
                     }
                     submit_button('Salvar Configurações');
