@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22890cf6-c4a3-4707-b5f6-5904bf72dc5b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/footer/footer-bar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/abstract/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/abstract/variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/components/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/components/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme/customizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme/customizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/sections/header-bar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/sections/header-bar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,15 @@
       <workItem from="1693877702028" duration="4276000" />
       <workItem from="1693925720544" duration="612000" />
       <workItem from="1693950302319" duration="21000" />
-      <workItem from="1694101863474" duration="7817000" />
+      <workItem from="1694101863474" duration="8080000" />
+      <workItem from="1694172139236" duration="5000" />
+      <workItem from="1694201029550" duration="546000" />
+      <workItem from="1694431363228" duration="102000" />
+      <workItem from="1694469283744" duration="115000" />
+      <workItem from="1694469651179" duration="411000" />
+      <workItem from="1695487290621" duration="3434000" />
+      <workItem from="1695516095332" duration="1217000" />
+      <workItem from="1695517763200" duration="1864000" />
     </task>
     <servers />
   </component>
