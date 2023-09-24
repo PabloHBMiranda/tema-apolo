@@ -2,8 +2,17 @@
     background: var(--primaria);
 
     .container{
+        padding: 20px 0;
         .wrapper-footer-bar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
             .copyrigth{
+                color: white;
+            }
+
+            .cnpj{
                 color: white;
             }
         }

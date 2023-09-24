@@ -21,6 +21,7 @@ function infos_page() {
         'apl_admin_gn_telefone_2',
         'apl_admin_gn_email_1',
         'apl_admin_gn_email_2',
+        'apl_admin_gn_cnpj',
     ];
 
     $slug_admin_page = 'apl_general_information';

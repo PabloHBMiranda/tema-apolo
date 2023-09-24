@@ -25,6 +25,9 @@ function initialize_theme_options() {
     if (false === get_option('apl_admin_gn_email_2')) {
         add_option('apl_admin_gn_email_2', '');
     }
+    if (false === get_option('apl_admin_gn_cnpj')) {
+        add_option('apl_admin_gn_gn_cnpj', '');
+    }
 
 
     //Redes Sociais
