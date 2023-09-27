@@ -18,7 +18,7 @@ $menu_class = 'menu-class-' . $theme_location;
         <?php
             wp_nav_menu(
                 [
-                    'theme_location' => 'header-menu',
+                    'theme_location' => $theme_location,
                     'container' => $container,
                     'container_class' => $container_class,
                     'menu_class' => $menu_class,

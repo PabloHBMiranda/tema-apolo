@@ -28,9 +28,11 @@ function initialize_theme_options() {
     if (false === get_option('apl_admin_gn_cnpj')) {
         add_option('apl_admin_gn_gn_cnpj', '');
     }
-
     if (false === get_option('apl_admin_gn_endereco')) {
         add_option('apl_admin_gn_gn_endereco', '');
+    }
+    if (false === get_option('apl_admin_gn_horario')) {
+        add_option('apl_admin_gn_horario', '');
     }
 
 

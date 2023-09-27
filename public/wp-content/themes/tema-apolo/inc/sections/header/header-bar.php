@@ -21,7 +21,7 @@ $class_list = implode('-', $class_name);
             }
             get_template_part('inc/components/menu', null, [
                 'theme_location' => 'header-menu',
-                'depth' => 0
+                'depth' => 2
             ]);
             get_template_part('inc/components/social_media');
             ?>

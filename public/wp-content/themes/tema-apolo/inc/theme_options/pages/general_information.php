@@ -16,13 +16,13 @@ function informations_options(){
 function infos_page() {
 
     $options_names = [
-        'apl_admin_gn_endereco',
         'apl_admin_gn_telefone_1',
         'apl_admin_gn_telefone_2',
         'apl_admin_gn_email_1',
         'apl_admin_gn_email_2',
         'apl_admin_gn_cnpj',
         'apl_admin_gn_endereco',
+        'apl_admin_gn_horario',
     ];
 
     $slug_admin_page = 'apl_general_information';
