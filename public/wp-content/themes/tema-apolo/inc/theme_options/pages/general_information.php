@@ -42,14 +42,19 @@ function infos_page() {
         echo '<div class="updated"><p>Opções atualizadas com sucesso.</p></div>';
     }
             echo '<form class="form-infos" method="post">';
+                    $new_name = [
+                        'Cnpj' => 'CNPJ',
+                        'Endereco' => 'Endereço',
+                        'Horario' => 'Horário',
+                    ];
                     foreach ($options_names as $name){
                         $old_name = $name;
                         $name = str_replace('apl_admin_gn_', '', $name);
                         $name = str_replace('_', ' ', $name);
                         $name = ucwords($name);
 
-                        if($name === 'Endereco'){
-                            $name = 'Endereço';
+                        if($name && $new_name && array_key_exists($name, $new_name)) {
+                            $name = $new_name[$name];
                         }
                         echo '<div class="wrapper-form"><p class="text-form">' . $name . '</p><input type="text" id="'. $old_name . '" name="' . $old_name . '" placeholder="' . $name . '" value="' . esc_attr(get_option($old_name)) . '" /></div>';
                     }

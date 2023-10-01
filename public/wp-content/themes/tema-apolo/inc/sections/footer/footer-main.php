@@ -12,6 +12,10 @@ if (get_option('apl_admin_gn_endereco')) {
     $endereco = get_option('apl_admin_gn_endereco');
 }
 
+if (get_option('apl_admin_gn_horario')) {
+    $horario = get_option('apl_admin_gn_horario');
+}
+
 if (get_option('apl_admin_gn_telefone_1')) {
     $telefone_1 = get_option('apl_admin_gn_telefone_1');
 }
@@ -25,7 +29,7 @@ $class_list = implode('-', $class_name);
     <div class="container">
         <div class="wrapper-footer-main">
             <div class="footer-left">
-                <h3 class="title-item-footer">Veja mais</h3>
+                <h3 class="title-item-footer">Veja Mais</h3>
                 <div class="wrapper-footer-left">
                     <?php
                     get_template_part('inc/components/menu', null, [
@@ -36,7 +40,34 @@ $class_list = implode('-', $class_name);
                 </div>
             </div>
             <div class="footer-center"></div>
-            <div class="footer-right"></div>
+                <h3 class="title-item-footer">Venha Conhecer</h3>
+                <div class="wrapper-footer-center">
+                    <div class="content-location">
+                        <?php
+                        include ICONS . 'location' . '.php';
+                        print $endereco;
+                        ?>
+                    </div>
+                    <div class="content-time">
+                        <?php
+                        include ICONS . 'clock' . '.php';
+                        print $horario;
+                        ?>
+                    </div>
+                </div>
+            <div class="footer-right">
+                <h3 class="title-item-footer">Entre em Contato</h3>
+                <div class="wrapper-footer-right">
+                    <div class="content-phone">
+                        <?php
+                        include ICONS . 'phone' . '.php';
+                        print $telefone_1;
+                        ?>
+                    </div>
+                    <?php
+                    get_template_part('inc/components/social_media');
+                    ?>
+            </div>
         </div>
     </div>
 </div>

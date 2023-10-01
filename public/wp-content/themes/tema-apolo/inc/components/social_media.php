@@ -1,5 +1,6 @@
 <?php
 
+$type = $args['type'] ?? 'default';
 $social_midias = [];
 
 if (get_option('apl_admin_sc_facebook')) {
@@ -23,10 +24,17 @@ if (get_option('apl_admin_sc_whatsapp')) {
     ];
 }
 
+$class_name = [
+    'template-component-social-media',
+    $type
+];
+
+$class_list = implode(' ', $class_name);
+
 ?>
 
 <?php if (!empty($social_midias)) { ?>
-    <div class="template-component-social-media">
+    <div class="<?= $class_list ?>">
         <div class="wrapper-social-icons">
             <?php foreach ($social_midias as $social) { ?>
                 <div class="content-social-media">
