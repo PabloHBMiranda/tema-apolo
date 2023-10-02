@@ -1,6 +1,7 @@
 <?php
 
 $type = $args['type'] ?? 'default';
+$names = $args['names'] ?? true;
 $social_midias = [];
 
 if (get_option('apl_admin_sc_facebook')) {
@@ -42,7 +43,9 @@ $class_list = implode(' ', $class_name);
                                 <span class="icon-social-media">
                                     <?php include ICONS . $social['name'] . '.php'; ?>
                                 </span>
-                        <p class="text-social-media"> <?= ucfirst($social['name']) ?></p>
+                        <?php if ($names) { ?>
+                            <p class="text-social-media"> <?= ucfirst($social['name']) ?></p>
+                        <?php } ?>
                     </a>
                 </div>
             <?php } ?>
