@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="22890cf6-c4a3-4707-b5f6-5904bf72dc5b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/components/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/components/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/components/social_media.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/components/social_media.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/sections/footer-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/sections/footer-main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/clock.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/clock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/location.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/location.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/footer/footer-main.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/footer/footer-main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +127,8 @@
       <workItem from="1695851614961" duration="5297000" />
       <workItem from="1696168495673" duration="9978000" />
       <workItem from="1696287052942" duration="88000" />
-      <workItem from="1696287322283" duration="665000" />
+      <workItem from="1696287322283" duration="2170000" />
+      <workItem from="1696298233888" duration="4495000" />
     </task>
     <servers />
   </component>

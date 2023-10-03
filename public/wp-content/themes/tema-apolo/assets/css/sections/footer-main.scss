@@ -1,0 +1,78 @@
+.template-section-footer-main {
+    background-color: var(--primaria);
+    padding: 40px 0;
+
+    .container {
+
+        .wrapper-footer-main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+
+            .title-item-footer {
+                font-size: $fs_24px;
+                font-weight: bold;
+                color: var(--secundaria);
+                margin-bottom: 20px;
+            }
+
+            .footer-content {
+                &.footer-center {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 500px;
+
+                    .wrapper-footer-center {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+
+                        .content {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+
+                            .text-content {
+                                display: flex;
+                                height: fit-content;
+                                color: white;
+                                font-size: $fs_16px;
+                                line-height: 110%;
+                                max-width: 300px;
+                            }
+
+                            &.location {
+
+                                svg {
+                                    width: 40px;
+                                    height: 40px;
+                                    margin-right: 10px;
+
+
+                                    path {
+                                        fill: var(--secundaria);
+                                    }
+                                }
+                            }
+
+                            &.time {
+                                svg {
+                                    width: 40px;
+                                    height: 40px;
+                                    margin-right: 10px;
+
+                                    g {
+                                        path {
+                                            fill: var(--secundaria);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

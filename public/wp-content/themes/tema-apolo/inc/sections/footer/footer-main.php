@@ -28,7 +28,7 @@ $class_list = implode('-', $class_name);
 <section class="<?= $class_list ?>">
     <div class="container">
         <div class="wrapper-footer-main">
-            <div class="footer-left">
+            <div class="footer-content footer-left">
                 <h3 class="title-item-footer">Veja Mais</h3>
                 <div class="wrapper-footer-left">
                     <?php
@@ -39,23 +39,24 @@ $class_list = implode('-', $class_name);
                     ?>
                 </div>
             </div>
-            <div class="footer-center"></div>
-            <h3 class="title-item-footer">Venha Conhecer</h3>
-            <div class="wrapper-footer-center">
-                <div class="content-location">
-                    <?php
-                    include ICONS . 'location' . '.php';
-                    print $endereco;
-                    ?>
-                </div>
-                <div class="content-time">
-                    <?php
-                    include ICONS . 'clock' . '.php';
-                    print $horario;
-                    ?>
+            <div class="footer-content footer-center">
+                <h3 class="title-item-footer">Venha Conhecer</h3>
+                <div class="wrapper-footer-center">
+                    <div class="content location">
+                        <?php
+                        include ICONS . 'location' . '.php';
+                        echo '<p class="text-content">' . $endereco . '</p>';
+                        ?>
+                    </div>
+                    <div class="content time">
+                        <?php
+                        include ICONS . 'clock' . '.php';
+                        echo '<p class="text-content">' . $horario . '</p>';
+                        ?>
+                    </div>
                 </div>
             </div>
-            <div class="footer-right">
+            <div class="footer-content footer-right">
                 <h3 class="title-item-footer">Entre em Contato</h3>
                 <div class="wrapper-footer-right">
                     <div class="content-phone">
