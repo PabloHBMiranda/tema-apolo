@@ -15,58 +15,71 @@
                 font-weight: bold;
                 color: var(--secundaria);
                 margin-bottom: 20px;
+                line-height: 120%;
             }
 
             .footer-content {
+                display: flex;
+                flex-direction: column;
+                max-width: 400px;
+
+                .text-content {
+                    display: flex;
+                    height: fit-content;
+                    color: white;
+                    font-size: $fs_16px;
+                    line-height: 110%;
+                    max-width: 350px;
+                }
+
+                .wrapper-content-infos{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .content {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        svg {
+                            width: 40px;
+                            height: 40px;
+                            margin-right: 10px;
+
+                            path {
+                                fill: var(--secundaria);
+                            }
+                        }
+                    }
+                }
+
                 &.footer-center {
                     display: flex;
                     flex-direction: column;
-                    max-width: 500px;
+
 
                     .wrapper-footer-center {
                         display: flex;
                         flex-direction: column;
-                        gap: 30px;
+                    }
+                }
 
-                        .content {
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
+                &.footer-right{
+                    display: flex;
+                    flex-direction: column;
 
-                            .text-content {
-                                display: flex;
-                                height: fit-content;
-                                color: white;
-                                font-size: $fs_16px;
-                                line-height: 110%;
-                                max-width: 300px;
-                            }
-
-                            &.location {
-
-                                svg {
-                                    width: 40px;
-                                    height: 40px;
-                                    margin-right: 10px;
-
-
-                                    path {
-                                        fill: var(--secundaria);
-                                    }
-                                }
-                            }
-
-                            &.time {
-                                svg {
-                                    width: 40px;
-                                    height: 40px;
-                                    margin-right: 10px;
-
-                                    g {
-                                        path {
-                                            fill: var(--secundaria);
-                                        }
-                                    }
+                    .wrapper-footer-right{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        .wrapper-content-infos{
+                            gap: 5px;
+                            .content{
+                                svg{
+                                    width: 30px;
+                                    height: 30px;
+                                    margin-right: 5px;
                                 }
                             }
                         }

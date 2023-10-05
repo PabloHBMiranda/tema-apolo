@@ -57,4 +57,17 @@
             }
         }
     }
+
+    &.footer-main{
+        .wrapper-social-icons{
+            .content-social-media{
+                .item-social-media{
+                    svg{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
 }

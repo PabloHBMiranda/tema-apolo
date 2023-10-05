@@ -20,6 +20,64 @@ if (get_option('apl_admin_gn_telefone_1')) {
     $telefone_1 = get_option('apl_admin_gn_telefone_1');
 }
 
+if (get_option('apl_admin_gn_telefone_2')) {
+    $telefone_2 = get_option('apl_admin_gn_telefone_2');
+}
+
+if (get_option('apl_admin_gn_email_1')) {
+    $email_1 = get_option('apl_admin_gn_email_1');
+}
+
+if (get_option('apl_admin_gn_email_2')) {
+    $email_2 = get_option('apl_admin_gn_email_2');
+}
+
+$location_time = [];
+
+if (!empty($endereco)) {
+    $location_time['location'] = [
+        'icon' => 'location.php',
+        'text' => $endereco
+    ];
+}
+
+if (!empty($horario)) {
+    $location_time['time'] = [
+        'icon' => 'clock.php',
+        'text' => $horario
+    ];
+}
+
+$contacts = [];
+
+if (!empty($telefone_1)) {
+    $contacts['phone_1'] = [
+        'icon' => 'phone.php',
+        'text' => $telefone_1
+    ];
+}
+
+if (!empty($telefone_2)) {
+    $contacts['phone_2'] = [
+        'icon' => 'phone.php',
+        'text' => $telefone_2
+    ];
+}
+
+if (!empty($email_1)) {
+    $contacts['email_1'] = [
+        'icon' => 'email.php',
+        'text' => $email_1
+    ];
+}
+
+if (!empty($email_2)) {
+    $contacts['email_2'] = [
+        'icon' => 'email.php',
+        'text' => $email_2
+    ];
+}
+
 
 $class_list = implode('-', $class_name);
 
@@ -42,28 +100,31 @@ $class_list = implode('-', $class_name);
             <div class="footer-content footer-center">
                 <h3 class="title-item-footer">Venha Conhecer</h3>
                 <div class="wrapper-footer-center">
-                    <div class="content location">
+                    <div class="wrapper-content-infos">
                         <?php
-                        include ICONS . 'location' . '.php';
-                        echo '<p class="text-content">' . $endereco . '</p>';
-                        ?>
-                    </div>
-                    <div class="content time">
-                        <?php
-                        include ICONS . 'clock' . '.php';
-                        echo '<p class="text-content">' . $horario . '</p>';
-                        ?>
+                        if (!empty($location_time)) {
+                            foreach ($location_time as $key => $item) { ?>
+                                <div class="content <?= $key ?>">
+                                    <?php include ICONS . $item['icon'] ?>
+                                    <p class="text-content"><?= $item['text'] ?></p>
+                                </div>
+                            <?php }
+                        } ?>
                     </div>
                 </div>
             </div>
             <div class="footer-content footer-right">
                 <h3 class="title-item-footer">Entre em Contato</h3>
                 <div class="wrapper-footer-right">
-                    <div class="content-phone">
-                        <?php
-                        include ICONS . 'phone' . '.php';
-                        print $telefone_1;
-                        ?>
+                    <div class="wrapper-content-infos">
+                        <?php if (!empty($contacts)) {
+                        foreach ($contacts as $key => $item) { ?>
+                        <div class="content <?= $key ?>">
+                            <?php include ICONS . $item['icon'] ?>
+                            <p class="text-content"><?= $item['text'] ?></p>
+                        </div>
+                        <?php }
+                    } ?>
                     </div>
                     <?php
                     get_template_part('inc/components/social_media', null, ['type' => 'footer-main', 'names' => false]);

@@ -7,8 +7,6 @@
             flex-direction: row;
             gap: 40px;
             height: 100%;
-            justify-content: center;
-            align-items: center;
 
             .menu-item{
                 display: flex;
@@ -16,7 +14,6 @@
                 align-items: center;
                 justify-content: center;
                 position: relative;
-                max-height: 40px;
 
                 a{
                     display: flex;
@@ -27,7 +24,6 @@
                     font-size: $fs_base;
                     color: var(--fonte-escura);
                     width: 100%;
-                    border-bottom: 3px solid transparent;
                     transition: .3s;
                 }
 
@@ -36,23 +32,13 @@
                         border: none !important;
                     }
                 }
-
-                &:hover{
-                    a{
-                        border-color: var(--secundaria-escura);
-                        color: var(--secundaria-escura);
-                    }
-
-                    .sub-menu{
-                        backface-visibility: hidden !important;
-                        opacity: 1 !important;
-                        visibility: visible !important;
-                    }
-                }
             }
 
             &.menu-class-header-menu{
+                justify-content: center;
+                align-items: center;
                 .menu-item{
+                    max-height: 40px;
                     .sub-menu{
                         backface-visibility: hidden;
                         background: white;
@@ -74,6 +60,7 @@
                         z-index: 1;
                         align-items: start;
                         height: fit-content;
+                        border-bottom: 3px solid transparent;
 
                         li{
                             width: 100%;
@@ -88,11 +75,38 @@
                             }
                         }
                     }
+
+                    &:hover{
+                        a{
+                            border-color: var(--secundaria-escura);
+                            color: var(--secundaria-escura);
+                        }
+
+                        .sub-menu{
+                            backface-visibility: hidden !important;
+                            opacity: 1 !important;
+                            visibility: visible !important;
+                        }
+                    }
                 }
             }
 
             &.menu-class-footer-main{
+                flex-direction: column;
+                gap: 10px;
+                .menu-item{
+                    a{
+                        color: white;
+                        font-size: $fs_16px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        transition: .3s;
 
+                        &:hover{
+                            color: var(--secundaria);
+                        }
+                    }
+                }
             }
         }
     }
