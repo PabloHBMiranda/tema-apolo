@@ -35,4 +35,5 @@
 <body <?php body_class() ?>>
 <header>
     <?php include 'inc/sections/header/header-bar.php' ?>
+    <?php include 'inc/sections/header/header-main.php' ?>
 </header>

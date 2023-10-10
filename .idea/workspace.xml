@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22890cf6-c4a3-4707-b5f6-5904bf72dc5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/phone.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme/widget_register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/widgets/class_widget_apolo_cards.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/components/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/components/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/components/social-media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/components/social-media.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/sections/footer-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/css/sections/footer-main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/clock.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/clock.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/location.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons/location.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/footer/footer-main.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/footer/footer-main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/header/header-main.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/sections/header/header-main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme/customizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/customizer/colors.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +72,11 @@
       <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/customizer" />
       <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/icons" />
       <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme_options" />
       <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc" />
       <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/inc/theme" />
-      <recent name="$PROJECT_DIR$/public/wp-content/themes/tema-apolo/assets/js/front_page" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -132,7 +130,10 @@
       <workItem from="1696287322283" duration="2170000" />
       <workItem from="1696298233888" duration="4805000" />
       <workItem from="1696456953495" duration="1210000" />
-      <workItem from="1696467713948" duration="6093000" />
+      <workItem from="1696467713948" duration="6600000" />
+      <workItem from="1696626917575" duration="730000" />
+      <workItem from="1696888588396" duration="4410000" />
+      <workItem from="1696895465408" duration="6461000" />
     </task>
     <servers />
   </component>
