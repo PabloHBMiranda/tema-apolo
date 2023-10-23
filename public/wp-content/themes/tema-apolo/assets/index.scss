@@ -2,9 +2,14 @@
 @import "css/abstract/responsive";
 @import "css/base/standards";
 
+/*Componentes*/
 @import "css/components/social-media";
 @import "css/components/menu";
 
+/*Sections*/
 @import "css/sections/header-bar";
 @import "css/sections/footer-bar";
 @import "css/sections/footer-main";
+
+/*Widgets*/
+@import "css/widgets/cards";

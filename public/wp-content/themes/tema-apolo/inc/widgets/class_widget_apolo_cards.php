@@ -35,7 +35,6 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
         ?>
 
         <div class="apolo-widget-card">
-            <div class="container">
                 <div class="wrapper-card">
                     <h2 class="text-title"><?= $text_title ?></h2>
                     <div class="wrapper-card-content">
@@ -51,7 +50,6 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
                         }
                         ?>
                 </div>
-            </div>
         </div>
 
         <?php
