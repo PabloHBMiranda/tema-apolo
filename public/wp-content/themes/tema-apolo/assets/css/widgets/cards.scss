@@ -2,13 +2,17 @@
     .apolo-widget-card{
         .wrapper-card{
             .text-title{
-
+                font-size: $fs_24px;
+                color: white;
             }
 
             .wrapper-card-content{
                 .card-menu-list{
                     .menu-item{
-
+                        background: black;
+                        color: white;
+                        padding: 20px;
+                        border-radius: var(--border-radius);
                     }
                 }
             }

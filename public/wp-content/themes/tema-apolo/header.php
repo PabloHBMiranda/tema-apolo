@@ -27,6 +27,7 @@
                 $value = $options[$arg];
                 echo "--" . $arg . ": " . $value . ";";
             }
+            echo "--border-radius: 5px";
         echo "}";
     echo '</style>';
     wp_head();
