@@ -10,7 +10,7 @@ require_once __DIR__ . "/theme/widget_register.php";
 //Widgets
 
 //Customizer
-require_once __DIR__ . '/customizer/colors.php';
+require_once __DIR__ . '/customizer/custom_configs.php';
 
 //Theme Options
 require_once __DIR__ . "/theme_options/index.php";

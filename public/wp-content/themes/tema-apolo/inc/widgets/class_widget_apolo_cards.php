@@ -59,7 +59,6 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
     public function form($instance) {
         $card_menu_option = 'card_menu_option';
         $card_title = 'card_title';
-        $background_image = 'background_image';
         $selected_option = !empty($instance[$card_menu_option]) ? $instance[$card_menu_option] : '';
         $card_text = !empty($instance[$card_title]) ? $instance[$card_title] : '';
 

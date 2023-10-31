@@ -19,6 +19,7 @@
         'fonte-escura',
         'fonte-clara',
         'background-color',
+        'border-radius'
     ];
     $options = get_option('theme_mods_tema-apolo');
     echo '<style>';
@@ -27,7 +28,6 @@
                 $value = $options[$arg];
                 echo "--" . $arg . ": " . $value . ";";
             }
-            echo "--border-radius: 5px";
         echo "}";
     echo '</style>';
     wp_head();
