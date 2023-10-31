@@ -31,7 +31,7 @@ Caso não tenha o Wordpress instalado o comando "docker-compose up" vai efetuar 
 
 #### Usuário Padrão
 ```
-dev
+desenvolvedor
 ```
 
 #### Senha Padrão
