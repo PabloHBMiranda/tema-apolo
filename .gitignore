@@ -5,7 +5,8 @@ public/*
 !/public/wp-content
 
 ## Wp-Content
-/public/wp-content/uploads
+!/public/wp-content/uploads
+!/public/wp-content/languages
 /public/wp-content/index.php
 
 ## Themes
@@ -16,3 +17,8 @@ public/*
 /public/wp-content/themes/tema-apolo/node_modules
 /public/wp-content/themes/tema-apolo/bundle
 /public/wp-content/themes/tema-apolo/yarn.lock
+
+## Plugins
+/public/wp-content/plugins/*
+!/public/wp-content/plugins/advanced-custom-fields
+!/public/wp-content/plugins/index.php
