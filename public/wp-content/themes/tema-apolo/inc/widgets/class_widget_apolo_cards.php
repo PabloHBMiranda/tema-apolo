@@ -23,15 +23,21 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
     public function widget($args, $instance) {
         $card_menu_option = 'card_menu_option';
         $card_title = 'card_title';
+        $card_number = 'card_number';
+
         $select_menu = !empty($instance[$card_menu_option]) ? $instance[$card_menu_option] : '';
         $text_title = !empty($instance[$card_title]) ? $instance[$card_title] : '';
-
-        echo $args['before_widget'];
+        $number_of_cards = !empty($instance[$card_number]) ? $instance[$card_number] : '2';
 
         if(empty($select_menu)){
             return;
         }
 
+        if($number_of_cards){
+            if($number_of_cards)
+        }
+
+        echo $args['before_widget'];
         ?>
 
         <div class="apolo-widget-card">
@@ -59,6 +65,8 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
     public function form($instance) {
         $card_menu_option = 'card_menu_option';
         $card_title = 'card_title';
+        $card_number = 'card_number';
+        $number_of_cards = !empty($instance[$card_number]) ? $instance[$card_number] : '2';
         $selected_option = !empty($instance[$card_menu_option]) ? $instance[$card_menu_option] : '';
         $card_text = !empty($instance[$card_title]) ? $instance[$card_title] : '';
 
@@ -79,6 +87,9 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
             <label for="<?php echo $this->get_field_id($card_title); ?>"><?php _e('Título:', 'text_domain'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id($card_title); ?>" name="<?php echo $this->get_field_name($card_title); ?>" type="text" value="<?= $card_text ?>">
 
+            <label for="<?php echo $this->get_field_id($card_number); ?>"><?php _e('Número de cards (por linha):', 'text_domain'); ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id($card_number); ?>" name="<?php echo $this->get_field_name($card_number); ?>" type="text" value="<?= $number_of_cards ?>">
+
             <label><?php _e('Selecione o menu a ser exibido.', 'text_domain'); ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id($card_menu_option); ?>" name="<?php echo $this->get_field_name($card_menu_option); ?>">
                 <?php foreach ($choices as  $key => $choice){
@@ -93,10 +104,12 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
     public function update($new_instance, $old_instance) {
         $card_menu_option = 'card_menu_option';
         $card_title = 'card_title';
+        $card_number = 'card_number';
 
         $instance = array();
         $instance[$card_menu_option] = (!empty($new_instance[$card_menu_option])) ? sanitize_key($new_instance[$card_menu_option]) : '';
         $instance[$card_title] = (!empty($new_instance[$card_title])) ? sanitize_key($new_instance[$card_title]) : '';
+        $instance[$card_number] = (!empty($new_instance[$card_number])) ? sanitize_key($new_instance[$card_number]) : '2';
 
         return $instance;
     }
