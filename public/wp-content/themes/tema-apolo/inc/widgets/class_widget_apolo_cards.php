@@ -47,7 +47,7 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
         ?>
         <div class="apolo-widget-card">
                 <div class="wrapper-card">
-                    <h2 class="text-title"><?= $text_title ?></h2>
+                    <?= !empty($text_title) ? '<h2 class="text-title">'. $text_title . '</h2>' : ''?>
                     <div class="wrapper-card-content" style="--columns: <?= $number_of_cards ?>;<?= !empty($max_width) ? 'max-width: ' . $max_width . 'px' : '' ?>">
                         <?php
                         if(!empty($select_menu)){
