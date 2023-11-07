@@ -26,6 +26,9 @@
         echo ":root {";
             foreach ($args as $arg) {
                 $value = $options[$arg];
+                if($arg === 'border-radius'){
+                    $value = $value . 'px';
+                }
                 echo "--" . $arg . ": " . $value . ";";
             }
         echo "}";

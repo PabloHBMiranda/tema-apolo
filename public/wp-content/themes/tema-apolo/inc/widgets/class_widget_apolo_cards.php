@@ -33,9 +33,10 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
             return;
         }
 
-        if($number_of_cards){
-            if($number_of_cards)
+        if(empty($number_of_cards) && !is_numeric($number_of_cards)){
+            $number_of_cards = 2;
         }
+
 
         echo $args['before_widget'];
         ?>
@@ -43,7 +44,7 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
         <div class="apolo-widget-card">
                 <div class="wrapper-card">
                     <h2 class="text-title"><?= $text_title ?></h2>
-                    <div class="wrapper-card-content">
+                    <div class="wrapper-card-content" style="--columns: <?= $number_of_cards ?>">
                         <?php
                         if(!empty($select_menu)){
                             wp_nav_menu(array(
