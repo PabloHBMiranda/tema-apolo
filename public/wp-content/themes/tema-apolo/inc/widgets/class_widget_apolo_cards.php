@@ -59,7 +59,7 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
                 <div class="wrapper-card">
                     <?= !empty($text_title) ? '<h2 class="text-title">'. $text_title . '</h2>' : ''?>
                     <div class="wrapper-card-content"
-                    style="--columns: <?= $number_of_cards ?>;<?= !empty($max_width) ? 'max-width: ' . $max_width . 'px' : '' ?><?= !empty($item_height) ? '--height: ' . $item_height . 'px' : '' ?>">
+                    style="--columns: <?= $number_of_cards ?>;<?= !empty($max_width) ? 'max-width: ' . $max_width . 'px;' : '' ?><?= !empty($item_height) ? '--height: ' . $item_height . 'px;  ' : '' ?>">
                         <?php
                         if(!empty($select_menu)){
                             wp_nav_menu(array(
@@ -136,7 +136,7 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
 
         $instance = array();
         $instance[$card_menu_option] = (!empty($new_instance[$card_menu_option])) ? sanitize_key($new_instance[$card_menu_option]) : '';
-        $instance[$card_title] = (!empty($new_instance[$card_title])) ? sanitize_key($new_instance[$card_title]) : '';
+        $instance[$card_title] = (!empty($new_instance[$card_title])) ? sanitize_text_field($new_instance[$card_title]) : '';
         $instance[$card_number] = (!empty($new_instance[$card_number])) ? sanitize_key($new_instance[$card_number]) : '2';
         $instance[$card_max_width] = (!empty($new_instance[$card_max_width])) ? sanitize_key($new_instance[$card_max_width]) : '';
         $instance[$card_height] = (!empty($new_instance[$card_height])) ? sanitize_key($new_instance[$card_height]) : '';
