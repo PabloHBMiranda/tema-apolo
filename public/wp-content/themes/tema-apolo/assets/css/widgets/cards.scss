@@ -21,6 +21,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 100%;
+                --gap: (var(--columns) - 1) * 10px;
                 .card-menu-list{
                     display: flex;
                     flex-direction: row;
@@ -28,11 +29,10 @@
                     width: 100%;
                     flex-wrap: wrap;
                     height: 100%;
-                    max-width: 500px;
                     .menu-item{
                         display: flex;
                         height: 100%;
-                        width: calc(100% / var(--columns) - 10px);
+                        width: calc((100% - var(--gap)) / var(--columns));
                         background: var(--primaria-escura);
                         color: white;
                         border-radius: var(--border-radius);
