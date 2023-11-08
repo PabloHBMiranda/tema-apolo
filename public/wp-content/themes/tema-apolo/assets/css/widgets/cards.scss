@@ -12,7 +12,7 @@
             height: 100%;
 
             .text-title{
-                font-size: $fs_24px;
+                font-size: $fs_28px;
                 color: white;
                 margin-bottom: 20px;
             }
@@ -23,22 +23,25 @@
                 align-items: center;
                 justify-content: center;
                 width: 100%;
-                --gap: (var(--columns) - 1) * 10px;
+                --gap: (var(--columns) - 1) * 15px;
                 .card-menu-list{
                     display: flex;
                     flex-direction: row;
-                    gap: 10px;
+                    gap: 15px;
                     width: 100%;
                     flex-wrap: wrap;
                     height: 100%;
                     .menu-item{
                         display: flex;
                         width: calc((100% - var(--gap)) / var(--columns));
-                        background: var(--primaria-escura);
                         height: var(--height);
                         color: white;
                         border-radius: var(--border-radius);
-                        box-shadow:  0 2px 4px rgba(0,0,0,.05);;
+                        box-shadow:  0 2px 4px rgba(0,0,0,.05);
+                        position: relative;
+                        transition: .2s;
+                        background: var(--primaria-escura);
+                        overflow: hidden;
 
                         a{
                             display: flex;
@@ -46,6 +49,29 @@
                             padding: 0 20px;
                             width: 100%;
                             font-weight: 700;
+                            z-index: 2;
+                            font-size: $fs_18px;
+                        }
+
+                        &::before{
+                            content: "";
+                            background: white;
+                            display: block;
+                            position: absolute;
+                            inset: 0;
+                            z-index: 0;
+                            transform: scaleX(0);
+                            transition: transform .2s ease-in-out;
+                            transform-origin: right;
+                        }
+
+                        &:hover{
+                            &::before{
+                                transform: scaleX(1);
+                                transform-origin: left;
+                            }
+                            color: var(--primaria-escura);
+
                         }
                     }
                 }
