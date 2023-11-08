@@ -110,7 +110,7 @@ class Class_Widget_Apolo_Cards extends \WP_Widget{
             <label for="<?php echo $this->get_field_id($card_number); ?>"><?php _e('Número de cards (por linha):', 'text_domain'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id($card_number); ?>" name="<?php echo $this->get_field_name($card_number); ?>" type="number" value="<?= $number_of_cards ?>">
 
-            <label for="<?php echo $this->get_field_id($card_max_width); ?>"><?php _e('Tamanho máximo do container:', 'text_domain'); ?></label>
+            <label for="<?php echo $this->get_field_id($card_max_width); ?>"><?php _e('Largura máxima do contaner:', 'text_domain'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id($card_max_width); ?>" name="<?php echo $this->get_field_name($card_max_width); ?>" type="number" value="<?= $max_width ?>">
 
             <label for="<?php echo $this->get_field_id($card_height); ?>"><?php _e('Altura do card:', 'text_domain'); ?></label>

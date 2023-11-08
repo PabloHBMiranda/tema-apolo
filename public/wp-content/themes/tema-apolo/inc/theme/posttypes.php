@@ -16,7 +16,7 @@ function register_motocycles() {
             'title',
             'thumbnail'
         ],
-        'menu_icon'           => 'dashicons-admin-post',
+        'menu_icon'           => 'dashicons-store',
     );
 
     register_post_type( 'motorcycles', $args );
