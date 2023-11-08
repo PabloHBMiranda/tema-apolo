@@ -11,7 +11,7 @@ $class_name = [
 $class_list = implode('-', $class_name);
 ?>
 
-<div class="<?= $class_list ?>">
+<section class="<?= $class_list ?>">
     <div class="container">
         <?php
         if (is_active_sidebar('header_main')) : ?>
@@ -20,4 +20,4 @@ $class_list = implode('-', $class_name);
             </div>
         <?php endif; ?>
     </div>
-</div>
+</section>
