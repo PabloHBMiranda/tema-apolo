@@ -1,8 +1,8 @@
 <?php
-function registrar_meu_post_type() {
+function register_motocycles() {
     $labels = array(
-        'name'               => 'Informações do Tema',
-        'singular_name'      => 'Informação do Tema',
+        'name'               => 'Motos',
+        'singular_name'      => 'moto',
     );
 
     $args = array(
@@ -11,17 +11,15 @@ function registrar_meu_post_type() {
         'has_archive'         => true,
         'publicly_queryable'  => true,
         'query_var'           => true,
-        'rewrite'             => array( 'slug' => 'theme_infos' ),
-        'capabilities' => array(
-            'create_posts' => 'do_not_allow',
-            'read_post' => 'do_not_allow',
-            'delete_post'=> 'do_not_allow',
-            'edit_post' => 'do_not_allow',
-        ),
+        'rewrite'             => array( 'slug' => 'motorcycles' ),
+        'supports' => [
+            'title',
+            'thumbnail'
+        ],
         'menu_icon'           => 'dashicons-admin-post',
     );
 
-    register_post_type( 'theme_infos', $args );
+    register_post_type( 'motorcycles', $args );
 }
 
-add_action( 'init', 'registrar_meu_post_type' );
+add_action( 'init', 'register_motocycles' );

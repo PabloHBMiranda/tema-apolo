@@ -1,6 +1,6 @@
 <?php
 
-function registrar_area_widgets() {
+function register_widget_zone() {
     register_sidebar(array(
         'name'          => __('Header Main', 'text_domain'),
         'id'            => 'header_main',
@@ -11,5 +11,5 @@ function registrar_area_widgets() {
         'after_title'   => '</h2>',
     ));
 }
-add_action('widgets_init', 'registrar_area_widgets');
+add_action('widgets_init', 'register_widget_zone');
 
