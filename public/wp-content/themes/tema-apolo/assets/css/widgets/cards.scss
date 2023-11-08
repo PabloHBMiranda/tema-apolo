@@ -34,7 +34,7 @@
                     .menu-item{
                         display: flex;
                         width: calc((100% - var(--gap)) / var(--columns));
-                        height: var(--height);
+                        min-height: var(--height);
                         color: white;
                         border-radius: var(--border-radius);
                         box-shadow:  0 2px 4px rgba(0,0,0,.05);
@@ -46,11 +46,12 @@
                         a{
                             display: flex;
                             align-items: center;
-                            padding: 0 20px;
+                            padding: 15px 20px;
                             width: 100%;
                             font-weight: 700;
                             z-index: 2;
                             font-size: $fs_18px;
+                            line-height: 110%;
                         }
 
                         &::before{
