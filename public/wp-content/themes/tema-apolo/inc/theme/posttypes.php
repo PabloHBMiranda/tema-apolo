@@ -2,7 +2,7 @@
 function register_motocycles() {
     $labels = array(
         'name'               => 'Motos',
-        'singular_name'      => 'moto',
+        'singular_name'      => 'Moto',
     );
 
     $args = array(
@@ -11,7 +11,7 @@ function register_motocycles() {
         'has_archive'         => true,
         'publicly_queryable'  => true,
         'query_var'           => true,
-        'rewrite'             => array( 'slug' => 'motorcycles' ),
+        'rewrite'             => array( 'slug' => 'motos' ),
         'supports' => [
             'title',
             'thumbnail'
@@ -19,7 +19,7 @@ function register_motocycles() {
         'menu_icon'           => 'dashicons-store',
     );
 
-    register_post_type( 'motorcycles', $args );
+    register_post_type( 'motos', $args );
 }
 
 add_action( 'init', 'register_motocycles' );
