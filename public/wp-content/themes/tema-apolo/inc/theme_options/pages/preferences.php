@@ -1,6 +1,6 @@
 <?php
 
-add_action('admin_menu', 'preference_options');
+//add_action('admin_menu', 'preference_options');
 function preference_options(){
     add_menu_page(
         'Preferências',
