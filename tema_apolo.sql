@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Tempo de geração: 20/11/2023 às 16:07
+-- Tempo de geração: 20/11/2023 às 16:08
 -- Versão do servidor: 5.7.44
 -- Versão do PHP: 8.2.8
 
@@ -227,14 +227,14 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (120, 'widget_tag_cloud', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (121, 'widget_nav_menu', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (122, 'widget_custom_html', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
-(123, '_transient_doing_cron', '1700496351.0619850158691406250000', 'yes'),
+(123, '_transient_doing_cron', '1700496522.7994089126586914062500', 'yes'),
 (126, 'auth_key', 'Fw}1jM~au93LspiULt<u2U1/E6>fTrjz8;[(7P}?,95#M?2O`oN$n?v0|?a2r3C#', 'no'),
 (127, 'auth_salt', ',$[xl5=O] <1D-c3N%2cx~Gt;/:NhP))O; xJWHa%v+RucB3VK]L@uj=;-f;vEV|', 'no'),
 (128, 'logged_in_key', '.]|pS DPTk0`)]bk0H#R~,HA4!>)?&pfL LO4>] ]^!e3aUeguPe))CW!&r0QF&v', 'no'),
 (129, 'logged_in_salt', '8#zI8+R#l5I&<:cB}^]^cB,O,>VjH99>/5i^PW)i^s;T}k8R N#B!AiSo7U>!DV?', 'no'),
 (168, 'theme_mods_twentytwentythree', 'a:1:{s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1689989717;s:4:\"data\";a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:3:{i:0;s:7:\"block-2\";i:1;s:7:\"block-3\";i:2;s:7:\"block-4\";}s:9:\"sidebar-2\";a:2:{i:0;s:7:\"block-5\";i:1;s:7:\"block-6\";}}}}', 'yes'),
 (169, 'current_theme', 'Tema Apolo', 'yes'),
-(170, 'theme_mods_tema-apolo', 'a:13:{s:18:\"custom_css_post_id\";i:-1;s:8:\"primaria\";s:7:\"#333333\";s:14:\"primaria-light\";s:7:\"#666666\";s:15:\"primaria-escura\";s:7:\"#1a1a1a\";s:10:\"secundaria\";s:7:\"#ff5733\";s:16:\"secundaria-light\";s:7:\"#ff8c66\";s:17:\"secundaria-escura\";s:7:\"#b23c0b\";s:12:\"fonte-escura\";s:7:\"#535353\";s:11:\"fonte-clara\";s:7:\"#808e9c\";s:16:\"background-color\";s:7:\"#f4f4f5\";s:18:\"nav_menu_locations\";a:2:{s:11:\"header-menu\";i:2;s:11:\"footer-main\";i:3;}s:11:\"custom_logo\";i:98;s:13:\"border-radius\";s:3:\"6px\";}', 'yes'),
+(170, 'theme_mods_tema-apolo', 'a:13:{s:18:\"custom_css_post_id\";i:-1;s:8:\"primaria\";s:7:\"#333333\";s:14:\"primaria-light\";s:7:\"#666666\";s:15:\"primaria-escura\";s:7:\"#1a1a1a\";s:10:\"secundaria\";s:7:\"#ff5733\";s:16:\"secundaria-light\";s:7:\"#ff8c66\";s:17:\"secundaria-escura\";s:7:\"#b23c0b\";s:12:\"fonte-escura\";s:7:\"#535353\";s:11:\"fonte-clara\";s:7:\"#808e9c\";s:16:\"background-color\";s:7:\"#f4f4f5\";s:18:\"nav_menu_locations\";a:2:{s:11:\"header-menu\";i:2;s:11:\"footer-main\";i:3;}s:11:\"custom_logo\";i:98;s:13:\"border-radius\";s:1:\"5\";}', 'yes'),
 (171, 'theme_switched', '', 'yes'),
 (192, 'recently_activated', 'a:0:{}', 'yes'),
 (202, 'recovery_mode_email_last_sent', '1699027202', 'yes'),
@@ -478,7 +478,15 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (453, 100, '_wp_trash_meta_status', 'publish'),
 (454, 100, '_wp_trash_meta_time', '1698768093'),
 (455, 101, '_wp_trash_meta_status', 'publish'),
-(456, 101, '_wp_trash_meta_time', '1698768180');
+(456, 101, '_wp_trash_meta_time', '1698768180'),
+(457, 102, '_wp_trash_meta_status', 'publish'),
+(458, 102, '_wp_trash_meta_time', '1700496476'),
+(459, 103, '_wp_trash_meta_status', 'publish'),
+(460, 103, '_wp_trash_meta_time', '1700496483'),
+(461, 104, '_wp_trash_meta_status', 'publish'),
+(462, 104, '_wp_trash_meta_time', '1700496489'),
+(463, 105, '_wp_trash_meta_status', 'publish'),
+(464, 105, '_wp_trash_meta_time', '1700496501');
 
 -- --------------------------------------------------------
 
@@ -583,7 +591,11 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (98, 1, '2023-10-31 12:50:14', '2023-10-31 15:50:14', 'http://localhost:1001/wp-content/uploads/2023/10/cropped-logo-alfa-motos-2.jpeg', 'cropped-logo-alfa-motos-2.jpeg', '', 'inherit', 'open', 'closed', '', 'cropped-logo-alfa-motos-2-jpeg', '', '', '2023-10-31 12:50:14', '2023-10-31 15:50:14', '', 0, 'http://localhost:1001/wp-content/uploads/2023/10/cropped-logo-alfa-motos-2.jpeg', 0, 'attachment', 'image/jpeg', 0),
 (99, 1, '2023-10-31 12:50:18', '2023-10-31 15:50:18', '{\n    \"tema-apolo::custom_logo\": {\n        \"value\": 98,\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2023-10-31 15:50:18\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '8a720771-a729-44d1-a6b1-701612f19f57', '', '', '2023-10-31 12:50:18', '2023-10-31 15:50:18', '', 0, 'http://localhost:1001/8a720771-a729-44d1-a6b1-701612f19f57/', 0, 'customize_changeset', '', 0),
 (100, 1, '2023-10-31 13:01:33', '2023-10-31 16:01:33', '{\n    \"tema-apolo::border-radius\": {\n        \"value\": \"6\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2023-10-31 16:01:33\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '7ca2e6b2-dec4-4a35-a1e5-232f2093363e', '', '', '2023-10-31 13:01:33', '2023-10-31 16:01:33', '', 0, 'http://localhost:1001/7ca2e6b2-dec4-4a35-a1e5-232f2093363e/', 0, 'customize_changeset', '', 0),
-(101, 1, '2023-10-31 13:03:00', '2023-10-31 16:03:00', '{\n    \"tema-apolo::border-radius\": {\n        \"value\": \"6px\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2023-10-31 16:03:00\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '106b595e-e3bb-444d-bd21-d1cbe0dc9ac1', '', '', '2023-10-31 13:03:00', '2023-10-31 16:03:00', '', 0, 'http://localhost:1001/106b595e-e3bb-444d-bd21-d1cbe0dc9ac1/', 0, 'customize_changeset', '', 0);
+(101, 1, '2023-10-31 13:03:00', '2023-10-31 16:03:00', '{\n    \"tema-apolo::border-radius\": {\n        \"value\": \"6px\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2023-10-31 16:03:00\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '106b595e-e3bb-444d-bd21-d1cbe0dc9ac1', '', '', '2023-10-31 13:03:00', '2023-10-31 16:03:00', '', 0, 'http://localhost:1001/106b595e-e3bb-444d-bd21-d1cbe0dc9ac1/', 0, 'customize_changeset', '', 0),
+(102, 1, '2023-11-20 13:07:56', '2023-11-20 16:07:56', '{\n    \"tema-apolo::border-radius\": {\n        \"value\": \"6\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2023-11-20 16:07:56\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'fb9f8e0d-24c0-4e83-8fd3-78f50472bb98', '', '', '2023-11-20 13:07:56', '2023-11-20 16:07:56', '', 0, 'http://localhost:1001/fb9f8e0d-24c0-4e83-8fd3-78f50472bb98/', 0, 'customize_changeset', '', 0),
+(103, 1, '2023-11-20 13:08:03', '2023-11-20 16:08:03', '{\n    \"tema-apolo::border-radius\": {\n        \"value\": \"2\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2023-11-20 16:08:03\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '9ffd05c3-c994-4b4c-8152-f712eae52cfb', '', '', '2023-11-20 13:08:03', '2023-11-20 16:08:03', '', 0, 'http://localhost:1001/9ffd05c3-c994-4b4c-8152-f712eae52cfb/', 0, 'customize_changeset', '', 0),
+(104, 1, '2023-11-20 13:08:09', '2023-11-20 16:08:09', '{\n    \"tema-apolo::border-radius\": {\n        \"value\": \"60\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2023-11-20 16:08:09\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '202a07a1-0a91-4b02-ac26-f96f91c93574', '', '', '2023-11-20 13:08:09', '2023-11-20 16:08:09', '', 0, 'http://localhost:1001/202a07a1-0a91-4b02-ac26-f96f91c93574/', 0, 'customize_changeset', '', 0),
+(105, 1, '2023-11-20 13:08:21', '2023-11-20 16:08:21', '{\n    \"tema-apolo::border-radius\": {\n        \"value\": \"5\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2023-11-20 16:08:21\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '576c16c4-2154-4557-a13d-0f904fdac694', '', '', '2023-11-20 13:08:21', '2023-11-20 16:08:21', '', 0, 'http://localhost:1001/576c16c4-2154-4557-a13d-0f904fdac694/', 0, 'customize_changeset', '', 0);
 
 -- --------------------------------------------------------
 
@@ -875,13 +887,13 @@ ALTER TABLE `wp_options`
 -- AUTO_INCREMENT de tabela `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=457;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=465;
 
 --
 -- AUTO_INCREMENT de tabela `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 
 --
 -- AUTO_INCREMENT de tabela `wp_termmeta`
