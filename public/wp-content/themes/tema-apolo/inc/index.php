@@ -15,6 +15,9 @@ require_once __DIR__ . '/customizer/custom_configs.php';
 //Theme Options
 require_once __DIR__ . "/theme_options/index.php";
 
+//ACF Fields
+require_once __DIR__ . "/acf_groups.php";
+
 
 $widgets = [
     'cards.php',
