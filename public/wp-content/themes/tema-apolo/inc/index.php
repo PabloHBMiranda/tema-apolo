@@ -20,9 +20,10 @@ require_once __DIR__ . "/acf_groups.php";
 
 
 $widgets = [
-    'cards.php',
+    'cards',
+    'motos'
 ];
 
 foreach ($widgets as $widget) {
-    require_once __DIR__ . "/widgets/class_widget_apolo_" . $widget;
+    require_once __DIR__ . "/widgets/class_widget_apolo_" . $widget . '.php';
 }

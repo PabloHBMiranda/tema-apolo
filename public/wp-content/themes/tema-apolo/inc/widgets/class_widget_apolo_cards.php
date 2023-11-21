@@ -1,6 +1,5 @@
 <?php
 
-
 function registrar_widget_cards(){
     register_widget('Class_Widget_Apolo_Cards');
 }
