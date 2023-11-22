@@ -1,14 +1,14 @@
 <?php
 
-function registrar_widget_motos(){
+function registrar_widget_motos() {
     register_widget('Class_Widget_Apolo_Motos');
 }
 
 add_action('widgets_init', 'registrar_widget_motos');
 
-class Class_Widget_Apolo_Motos extends \WP_Widget{
+class Class_Widget_Apolo_Motos extends \WP_Widget {
 
-    function __construct(){
+    function __construct() {
         parent::__construct(
             'motos',
             __('Motos', 'text_domain'),
@@ -18,42 +18,57 @@ class Class_Widget_Apolo_Motos extends \WP_Widget{
         );
     }
 
-    public function widget($args, $instance){
+    public function widget($args, $instance) {
         echo "<pre>";
-        print_r($this->widget_motos);
-        echo "<pre>";
+        print_r($instance);
+        echo "</pre>";
     }
 
-    public function form($instance){
-        $widget_number_motos = 'widget_number_motos';
-        $widget_category_motos = 'widget_category_motos';
+    public function form($instance) {
+        $defaults = array(
+            'widget_number_motos' => '',
+            'widget_category_motos' => array(),
+        );
 
-        $categories = array_map(function($category){
-            return [
-                'id' => $category->term_id,
-                'name' => $category->name,
-            ];
-        }, get_terms(['taxonomy' => 'category', 'hide_empty' => false]));
+        $instance = wp_parse_args((array) $instance, $defaults);
+
+        $widget_number_motos = esc_attr($this->get_field_id('widget_number_motos'));
+        $widget_category_motos = esc_attr($this->get_field_name('widget_category_motos'));
+
+        $categories_checked = !empty($instance['widget_category_motos']) ? $instance['widget_category_motos'] : [];
+
+        $categories = $this->getCategoriesFiltered();
         ?>
 
         <p>
-        <label for="<?= $this->get_field_id($widget_category_motos); ?>"><?php _e('Categoria das Motos:', 'text_domain'); ?></label>
-        <form>
+            <label for="<?= $widget_category_motos; ?>"><?php _e('Categoria das Motos:', 'text_domain'); ?></label>
             <?php foreach ($categories as $value) { ?>
                 <div>
-                    <input type="checkbox" name="<?= $value['id'] ?>" value="<?= $value['id'] ?>">
-                    <label><?= $value['name'] ?></label>
+                    <input type="checkbox" id="<?= $widget_category_motos . '_' . $value['id']; ?>" name="<?= $widget_category_motos . '[]'; ?>" value="<?= $value['id']; ?>" <?php checked(in_array($value['id'], $categories_checked)); ?>>
+                    <label for="<?= $widget_category_motos . '_' . $value['id']; ?>"><?= $value['name']; ?></label>
                 </div>
             <?php } ?>
-        </form>
         </p>
 
         <?php
     }
 
-    public function update($new_instance, $old_instance){
-        echo "<pre>";
-        print_r($this->widget_motos);
-        echo "<pre>";
+    public function update($new_instance, $old_instance) {
+        $instance = array();
+        $instance['widget_number_motos'] = strip_tags($new_instance['widget_number_motos']);
+        $instance['widget_category_motos'] = isset($new_instance['widget_category_motos']) ? array_map('intval', $new_instance['widget_category_motos']) : array();
+
+        return $instance;
+    }
+
+    private function getCategoriesFiltered() {
+        $categories = array_map(function($category) {
+            return [
+                'id' => $category->term_id,
+                'name' => $category->name,
+            ];
+        }, get_terms(['taxonomy' => 'category', 'hide_empty' => false]));
+
+        return $categories;
     }
 }
