@@ -23,7 +23,7 @@ $class_list = implode('-', $class_name);
                 'theme_location' => 'header-menu',
                 'depth' => 2
             ]);
-            get_template_part('inc/components/social_media');
+              ;
             ?>
         </div>
     </div>
