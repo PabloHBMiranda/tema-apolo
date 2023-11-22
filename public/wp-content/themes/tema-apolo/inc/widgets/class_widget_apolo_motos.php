@@ -8,8 +8,6 @@ add_action('widgets_init', 'registrar_widget_motos');
 
 class Class_Widget_Apolo_Motos extends \WP_Widget{
 
-    private $widget_motos = ['widget_number_motos' => 0];
-
     function __construct(){
         parent::__construct(
             'motos',
@@ -27,22 +25,35 @@ class Class_Widget_Apolo_Motos extends \WP_Widget{
     }
 
     public function form($instance){
-        $categories = get_categories();
-        echo "<pre>";
-        print_r($categories);
-        echo "<pre>";
-        get_template_part('inc/components/multiple-checkbox', null, [
-            'title' => 'teste de envio',
-        ]);
+        $widget_number_motos = 'widget_number_motos';
+        $widget_category_motos = 'widget_category_motos';
+
+        $categories = array_map(function($category){
+            return [
+                'id' => $category->term_id,
+                'name' => $category->name,
+            ];
+        }, get_terms(['taxonomy' => 'category', 'hide_empty' => false]));
+        ?>
+
+        <p>
+        <label for="<?= $this->get_field_id($widget_category_motos); ?>"><?php _e('Categoria das Motos:', 'text_domain'); ?></label>
+        <form>
+            <?php foreach ($categories as $value) { ?>
+                <div>
+                    <input type="checkbox" name="<?= $value['id'] ?>" value="<?= $value['id'] ?>">
+                    <label><?= $value['name'] ?></label>
+                </div>
+            <?php } ?>
+        </form>
+        </p>
+
+        <?php
     }
 
     public function update($new_instance, $old_instance){
         echo "<pre>";
         print_r($this->widget_motos);
         echo "<pre>";
-    }
-
-    private function getCategory(){
-        
     }
 }
