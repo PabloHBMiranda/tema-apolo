@@ -1,5 +1,23 @@
 <?php
 
+$class_name = 'template-section';
+$id = 'front-page-widgets';
+
+$class_name = [
+    $class_name,
+    $id
+];
+
+$class_list = implode('-', $class_name);
+
 get_header();
-dynamic_sidebar('front_home');
+?>
+
+<main>
+    <div class="<?= $class_list ?>">
+        <?php include 'inc/sections/front-page/front-page.php' ?>
+    </div>
+</main>
+
+<?php
 get_footer();
