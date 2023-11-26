@@ -1,7 +1,21 @@
 .widget.widget_motos{
     .apolo-widget-motos{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
         .header-content{
+            display: flex;
             width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .title{
+                font-size: $fs_28px;
+                color: var(--fonte-escura);
+                margin-bottom: 20px;
+            }
         }
     }
 }

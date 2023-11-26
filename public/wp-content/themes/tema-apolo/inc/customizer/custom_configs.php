@@ -93,11 +93,9 @@ function custom_configs($wp_customize) {
         'settings' => 'secundaria-escura',
     )));
 
-    //xxx
-
     //Adiciona um controle para selecionar uma cor - OPTIONS
     $wp_customize->add_setting('fonte-escura', array(
-        'default' => '#535353',
+        'default' => '#282626;',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
@@ -106,12 +104,17 @@ function custom_configs($wp_customize) {
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
+    $wp_customize->add_setting('cor-branca', array(
+        'default' => '#FFFFFF',
+        'sanitize_callback' => 'sanitize_hex_color',
+    ));
+
     $wp_customize->add_setting('background-color', array(
         'default' => '#F4F4F5',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
-    //Adiciona o Controle - SECUNDARIAS
+    //Adiciona um controle para selecionar uma cor - OPTIONS
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'fonte-escura', array(
         'label' => __('Fonte Escura', 'tema-apolo'),
         'section' => 'custom_configs',
@@ -122,6 +125,12 @@ function custom_configs($wp_customize) {
         'label' => __('Fonte Clara', 'tema-apolo'),
         'section' => 'custom_configs',
         'settings' => 'fonte-clara',
+    )));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'cor-branca', array(
+        'label' => __('Cor Branca', 'tema-apolo'),
+        'section' => 'custom_configs',
+        'settings' => 'cor-branca',
     )));
 
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'background-color', array(

@@ -1,0 +1,18 @@
+.template-front-page-widgets{
+    display: flex;
+    width: 100%;
+    padding: 80px 0;
+
+    .section-front-page-one{
+        display: flex;
+        width: 100%;
+
+        .container{
+            .wrapper-front-page-content{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <?php
 
-$class_name = 'template-section';
+$class_name = 'template';
 $id = 'front-page-widgets';
 
 $class_name = [
@@ -15,7 +15,7 @@ get_header();
 
 <main>
     <div class="<?= $class_list ?>">
-        <?php include 'inc/sections/front-page/front-page.php' ?>
+        <?php include 'inc/layout/front-page/front-page.php' ?>
     </div>
 </main>
 

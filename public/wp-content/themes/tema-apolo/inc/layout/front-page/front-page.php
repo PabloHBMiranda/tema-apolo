@@ -1,6 +1,6 @@
 <?php
 
-$class_name = 'template-section';
+$class_name = 'section';
 $id = 'front-page-one';
 
 $class_name = [

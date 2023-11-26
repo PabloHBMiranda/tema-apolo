@@ -1,7 +1,8 @@
+/*Abstract*/
 @import "css/abstract/variables";
 @import "css/abstract/responsive";
 
-/*Widget*/
+/*Base*/
 @import "css/base/widgets";
 @import "css/base/standards";
 
@@ -9,11 +10,12 @@
 @import "css/components/social-media";
 @import "css/components/menu";
 
-/*Sections*/
-@import "css/sections/header-bar";
-@import "css/sections/header-main";
-@import "css/sections/footer-bar";
-@import "css/sections/footer-main";
+/*Layout*/
+@import "css/layout/header-bar";
+@import "css/layout/header-main";
+@import "css/layout/footer-bar";
+@import "css/layout/footer-main";
+@import "css/layout/front-page";
 
 /*Widgets*/
 @import "css/widgets/cards";

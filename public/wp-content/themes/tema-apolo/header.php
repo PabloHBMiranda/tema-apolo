@@ -18,6 +18,7 @@
         'secundaria-escura',
         'fonte-escura',
         'fonte-clara',
+        'cor-branca',
         'background-color',
         'border-radius'
     ];
@@ -38,6 +39,6 @@
 </head>
 <body <?php body_class() ?>>
 <header>
-    <?php include 'inc/sections/header/header-bar.php' ?>
-    <?php include 'inc/sections/header/header-main.php' ?>
+    <?php include 'inc/layout/header/header-bar.php' ?>
+    <?php include 'inc/layout/header/header-main.php' ?>
 </header>
