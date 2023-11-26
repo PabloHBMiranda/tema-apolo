@@ -10,7 +10,7 @@ function add_nav_menus_link() {
         'nav-menus.php',
         '',
         'dashicons-menu',
-        29
+        27
     );
 
     add_menu_page(
@@ -20,8 +20,19 @@ function add_nav_menus_link() {
         'customize.php',
         '',
         'dashicons-art',
+        28
+    );
+
+    add_menu_page(
+        'Widgets',
+        'Widgets',
+        'manage_options',
+        'widgets.php',
+        '',
+        'dashicons-buddicons-activity',
         29
     );
+
 
 }
 

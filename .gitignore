@@ -12,6 +12,7 @@ public/*
 ## Themes
 /public/wp-content/themes/*
 !/public/wp-content/themes/tema-apolo
+!/public/wp-content/themes/twentytwentyfour
 
 ## Tema
 /public/wp-content/themes/tema-apolo/node_modules

@@ -27,23 +27,32 @@ class Class_Widget_Apolo_Motos extends \WP_Widget
         $categoreie = !empty($instance['widget_category_motos']) ? $instance['widget_category_motos'] : [];
         $title = !empty($instance['widget_title_motos']) ? $instance['widget_title_motos'] : '';
         $page_link = !empty($instance['widget_page_motos']) ? $instance['widget_page_motos'] : '';
-        $target = !empty($instance['widget_target_motos']) ? $instance['widget_target_motos'] : false;
+        $target = $instance['widget_target_motos'] ?? false;
 
-
+        echo $args['before_widget'];
         ?>
-
+        <div class="apolo-widget-motos">
+                <div class="header-content">
+                    <?= !empty($title) ? '<h2 class="title">'. $title . '</h2>' : ''?>
+                    <div class="wrapper-link">
+                        <a href="<?= $page_link ?>" target=" <?= $target ? '_blank' : '_self' ?>">Ver todas</a>
+                </div>
+                <div class="wrapper-content">
+                </div>
+        </div>
         <?php
+        echo $args['after_widget'];
     }
 
     public function form($instance)
     {
-        $defaults = array(
+        $defaults = [
             'widget_number_motos' => 0,
-            'widget_category_motos' => array(),
+            'widget_category_motos' => [],
             'widget_title_motos' => '',
             'widget_page_motos' => '',
             'widget_target_motos' => false,
-        );
+        ];
 
         $instance = wp_parse_args((array)$instance, $defaults);
 
@@ -57,7 +66,7 @@ class Class_Widget_Apolo_Motos extends \WP_Widget
         $value_number_motos = !empty($instance['widget_number_motos']) ? $instance['widget_number_motos'] : 0;
         $value_title_motos = !empty($instance['widget_title_motos']) ? $instance['widget_title_motos'] : '';
         $value_page_motos = !empty($instance['widget_page_motos']) ? $instance['widget_page_motos'] : '';
-        $value_target_motos = !empty($instance['widget_target_motos']) ? $instance['widget_target_motos'] : false;
+        $value_target_motos = (bool)$instance['widget_target_motos'] ?? false;
 
         $choices [''] = 'Selecione uma opção';
         if (!empty($pages = new WP_Query(['post_type' => 'page']))) {
@@ -88,6 +97,14 @@ class Class_Widget_Apolo_Motos extends \WP_Widget
             } ?>
         </select>
 
+        <div>
+            <input class="widefat" id="<?= $widget_target_motos ?>"
+                   name="<?= $this->get_field_name('widget_target_motos') ?>" type="checkbox"
+                   <?php checked(true, $value_target_motos) ?>
+                   value="<?= true ?>">
+            <label for="<?= $widget_target_motos ?>"><?php _e('Abrir em uma nova aba?', 'text_domain'); ?></label>
+        </div>
+
         <label for="<?= $widget_category_motos; ?>"><?php _e('Categoria das Motos:', 'text_domain'); ?></label>
         <?php foreach ($categories as $value) { ?>
             <div>
@@ -103,12 +120,13 @@ class Class_Widget_Apolo_Motos extends \WP_Widget
 
     public function update($new_instance, $old_instance)
     {
-        $instance = array();
+        $instance = [];
 
         $instance['widget_number_motos'] = (!empty($new_instance['widget_number_motos']) && is_numeric($new_instance['widget_number_motos'])) ? $new_instance['widget_number_motos'] : 0;
-        $instance['widget_category_motos'] = isset($new_instance['widget_category_motos']) ? array_map('intval', $new_instance['widget_category_motos']) : array();
+        $instance['widget_category_motos'] = isset($new_instance['widget_category_motos']) ? array_map('intval', $new_instance['widget_category_motos']) : [];
         $instance['widget_title_motos'] = (!empty($new_instance['widget_title_motos'])) ? $new_instance['widget_title_motos'] : '';
-        $instance['widget_page_motos'] = (!empty($new_instance['widget_page_motos'])) ? $new_instance['widget_page_motos'] : '';
+        $instance['widget_page_motos'] = (!empty($new_instance['widget_page_motos'])) ? $new_instance['widget_page_motos'] : '/';
+        $instance['widget_target_motos'] = $new_instance['widget_target_motos'] ?? false;
 
         return $instance;
     }
