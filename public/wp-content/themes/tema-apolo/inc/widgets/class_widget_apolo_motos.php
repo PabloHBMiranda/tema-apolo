@@ -24,11 +24,28 @@ class Class_Widget_Apolo_Motos extends \WP_Widget
     public function widget($args, $instance)
     {
         $post_per_page = !empty($instance['widget_number_motos']) ? $instance['widget_number_motos'] : 4;
-        $categoreie = !empty($instance['widget_category_motos']) ? $instance['widget_category_motos'] : [];
+        $categories = !empty($instance['widget_category_motos']) ? $instance['widget_category_motos'] : [];
         $title = !empty($instance['widget_title_motos']) ? $instance['widget_title_motos'] : 'Escolha sua Moto';
         $page_link = !empty($instance['widget_page_motos']) ? $instance['widget_page_motos'] : '';
         $text_link = !empty($instance['widget_textlink_motos']) ? $instance['widget_textlink_motos'] : 'Ver todas';
         $target = $instance['widget_target_motos'] ?? false;
+
+        $post_args = [
+            'post_type' => 'post',
+            'posts_per_page' => $post_per_page,
+        ];
+
+        if(!empty($categories)){
+            $post_args['tax_query'] = [
+                [
+                    'taxonomy' => 'category',
+                    'field' => 'term_id',
+                    'terms' => $categories,
+                ]
+            ];
+        }
+
+        $posts = new WP_Query($post_args);
 
         echo $args['before_widget'];
         ?>
@@ -41,6 +58,21 @@ class Class_Widget_Apolo_Motos extends \WP_Widget
                     <?php } ?>
                 </div>
                 <div class="wrapper-content">
+                    <?php if ($posts->have_posts()) { ?>
+                        <?php while ($posts->have_posts()) {
+                            $posts->the_post(); ?>
+                            <div class="item">
+                                <a href="<?= get_the_permalink() ?>">
+                                    <div class="wrapper-image">
+                                        <?= get_the_post_thumbnail(get_the_ID(), 'medium') ?>
+                                    </div>
+                                    <div class="wrapper-title">
+                                        <h3><?= get_the_title() ?></h3>
+                                    </div>
+                                </a>
+                            </div>
+                        <?php } ?>
+                    <?php } ?>
                 </div>
         </div>
         <?php
