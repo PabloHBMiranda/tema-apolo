@@ -84,6 +84,10 @@ body {
   margin: 0 auto;
   max-width: 1195px;
   width: 100%;
+
+  @include responsive('container'){
+    padding: 0 20px;
+  }
 }
 
 button::-moz-focus-inner,
