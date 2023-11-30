@@ -50,26 +50,29 @@ class Class_Widget_Apolo_Motos extends \WP_Widget
         echo $args['before_widget'];
         ?>
         <div class="apolo-widget-motos">
-                <div class="header-content">
+                <div class="header-wrapper">
                     <?= !empty($title) ? '<h2 class="title">'. $title . '</h2>' : ''?>
                     <?php if(!empty($text_link) && !empty($page_link)){ ?>
-                        <div class="wrapper-link">
+                        <div class="page-link-redirect">
                             <a href="<?= $page_link ?>" target=" <?= $target ? '_blank' : '_self' ?>"><?= $text_link ?></a></div>
                     <?php } ?>
                 </div>
-                <div class="wrapper-content">
+                <div class="wrapper-moto">
                     <?php if ($posts->have_posts()) { ?>
                         <?php while ($posts->have_posts()) {
                             $posts->the_post(); ?>
-                            <div class="item">
-                                <a href="<?= get_the_permalink() ?>">
-                                    <div class="wrapper-image">
+                            <div class="item-content">
+                                <div class="wrapper-image">
+                                    <a href="<?= get_permalink() ?>">
                                         <?= get_the_post_thumbnail(get_the_ID(), 'medium') ?>
-                                    </div>
-                                    <div class="wrapper-title">
-                                        <h3><?= get_the_title() ?></h3>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
+                                <div class="wrapper-infos">
+                                    <h3><?= get_the_title() ?></h3>
+                                    <a href="<?= get_the_permalink() ?>">
+                                        <p class="moto-link-redirect">Saiba Mais</p>
+                                    </a>
+                                </div>
                             </div>
                         <?php } ?>
                     <?php } ?>

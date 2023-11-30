@@ -3,7 +3,7 @@
         display: flex;
         width: 100%;
         flex-direction: column;
-        .header-content{
+        .header-wrapper{
             display: flex;
             width: 100%;
             flex-direction: column;
@@ -16,6 +16,15 @@
                 color: var(--fonte-escura);
                 margin-bottom: 20px;
             }
+
+            .page-link-redirect{
+            }
+        }
+
+        .wrapper-moto{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
         }
     }
 }
