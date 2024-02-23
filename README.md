@@ -1,3 +1,5 @@
+Porta: http://localhost:1001/
+
 Para rodar o projeto:
 
 Para habilitar e executar o container do Wordpress, execute o comando abaixo:
