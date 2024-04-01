@@ -35,7 +35,7 @@ class Class_Widget_Apolo_Motos extends \WP_Widget
             'posts_per_page' => $post_per_page,
         ];
 
-        if(!empty($categories)){
+        if (!empty($categories)) {
             $post_args['tax_query'] = [
                 [
                     'taxonomy' => 'category',
@@ -50,18 +50,20 @@ class Class_Widget_Apolo_Motos extends \WP_Widget
         echo $args['before_widget'];
         ?>
         <div class="apolo-widget-motos">
-                <div class="header-wrapper">
-                    <?= !empty($title) ? '<h2 class="title">'. $title . '</h2>' : ''?>
-                    <?php if(!empty($text_link) && !empty($page_link)){ ?>
-                        <div class="page-link-redirect">
-                            <a href="<?= $page_link ?>" target=" <?= $target ? '_blank' : '_self' ?>"><?= $text_link ?></a></div>
-                    <?php } ?>
-                </div>
-                <div class="wrapper-moto">
+            <div class="header-wrapper">
+                <?= !empty($title) ? '<h2 class="title">' . $title . '</h2>' : '' ?>
+                <?php if (!empty($text_link) && !empty($page_link)) { ?>
+                    <div class="page-link-redirect">
+                        <a href="<?= $page_link ?>" target=" <?= $target ? '_blank' : '_self' ?>"><?= $text_link ?></a>
+                    </div>
+                <?php } ?>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
                     <?php if ($posts->have_posts()) { ?>
                         <?php while ($posts->have_posts()) {
                             $posts->the_post(); ?>
-                            <div class="item-content">
+                            <div class="swiper-slide">
                                 <div class="wrapper-image">
                                     <a href="<?= get_permalink() ?>">
                                         <?= get_the_post_thumbnail(get_the_ID(), 'medium') ?>
@@ -77,6 +79,7 @@ class Class_Widget_Apolo_Motos extends \WP_Widget
                         <?php } ?>
                     <?php } ?>
                 </div>
+            </div>
         </div>
         <?php
         echo $args['after_widget'];
@@ -145,20 +148,20 @@ class Class_Widget_Apolo_Motos extends \WP_Widget
                    value="<?= $value_textlink_motos ?>">
             <input class="widefat" id="<?= $widget_target_motos ?>"
                    name="<?= $this->get_field_name('widget_target_motos') ?>" type="checkbox"
-                   <?php checked(true, $value_target_motos) ?>
+                <?php checked(true, $value_target_motos) ?>
                    value="<?= true ?>">
             <label for="<?= $widget_target_motos ?>"><?php _e('Abrir em uma nova aba?', 'text_domain'); ?></label>
         </div>
 
         <label for="<?= $widget_category_motos; ?>"><?php _e('Categoria das Motos:', 'text_domain'); ?></label>
         <?php foreach ($categories as $value) { ?>
-            <div>
-                <input type="checkbox" id="<?= $widget_category_motos . '_' . $value['id']; ?>"
-                       name="<?= $widget_category_motos . '[]'; ?>"
-                       value="<?= $value['id']; ?>" <?php checked(in_array($value['id'], $categories_checked)); ?>>
-                <label for="<?= $widget_category_motos . '_' . $value['id']; ?>"><?= $value['name']; ?></label>
-            </div>
-        <?php } ?>
+        <div>
+            <input type="checkbox" id="<?= $widget_category_motos . '_' . $value['id']; ?>"
+                   name="<?= $widget_category_motos . '[]'; ?>"
+                   value="<?= $value['id']; ?>" <?php checked(in_array($value['id'], $categories_checked)); ?>>
+            <label for="<?= $widget_category_motos . '_' . $value['id']; ?>"><?= $value['name']; ?></label>
+        </div>
+    <?php } ?>
 
         <?php
     }

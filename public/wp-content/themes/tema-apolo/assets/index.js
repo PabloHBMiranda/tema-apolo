@@ -1,4 +1,5 @@
 import homeScript from "./js/front_page/home-script";
+import motosScript from "./js/widgets/motos";
 
 ((fn) => {
     if (document.attachEvent ? document.readyState === 'complete' : document.readyState !== 'loading') {
@@ -8,5 +9,6 @@ import homeScript from "./js/front_page/home-script";
     }
 })(() => {
     homeScript();
+    motosScript();
 });
 
